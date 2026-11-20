@@ -642,6 +642,90 @@ const LESSONS = [
       },
     ],
   },
+  {
+    id: "vocab-quotidien",
+    title: "Vocabulaire : famille, couleurs et à table",
+    emoji: "🧺",
+    theory: [
+      {
+        title: "Comment travailler ce module ?",
+        body: "Révise les 10 mots avec les cartes mémoire, puis teste-toi avec le quiz. Retiens toujours le nom avec son article (η κόρη, το ψωμί) : c'est la meilleure façon de mémoriser le genre.",
+      },
+      {
+        title: "La famille",
+        list: [
+          "η οικογένεια = la famille",
+          "η κόρη = la fille (enfant)",
+          "ο γιος = le fils",
+          "η γιαγιά = la grand-mère",
+          "ο παππούς = le grand-père",
+        ],
+      },
+      {
+        title: "Les couleurs et à table",
+        list: [
+          "κόκκινος / μπλε / πράσινος = rouge / bleu / vert",
+          "το ψωμί = le pain",
+          "το τυρί = le fromage",
+          "το γάλα = le lait",
+        ],
+      },
+    ],
+    vocab: [
+      { word: "η οικογένεια", def: "la famille" },
+      { word: "η κόρη", def: "la fille (l'enfant)" },
+      { word: "ο γιος", def: "le fils" },
+      { word: "η γιαγιά", def: "la grand-mère" },
+      { word: "ο παππούς", def: "le grand-père" },
+      { word: "κόκκινος", def: "rouge" },
+      { word: "μπλε", def: "bleu" },
+      { word: "πράσινος", def: "vert" },
+      { word: "το ψωμί", def: "le pain" },
+      { word: "το τυρί", def: "le fromage" },
+    ],
+    quiz: [
+      {
+        q: "« la famille » se dit :",
+        choices: ["ο παππούς", "η οικογένεια", "το τυρί"],
+        answer: 1,
+      },
+      {
+        q: "« η γιαγιά » signifie :",
+        choices: ["la grand-mère", "la voisine", "la petite-fille"],
+        answer: 0,
+      },
+      {
+        q: "« le rouge » se dit :",
+        choices: ["πράσινος", "μπλε", "κόκκινος"],
+        answer: 2,
+      },
+      {
+        q: "« le pain » se dit :",
+        choices: ["το τυρί", "το ψωμί", "το γάλα"],
+        answer: 1,
+      },
+      {
+        q: "« la fille (l'enfant) » se dit :",
+        choices: ["η κόρη", "η γιαγιά", "η μητέρα"],
+        answer: 0,
+      },
+      {
+        q: "Quel nom est féminin ?",
+        choices: ["το ψωμί", "ο παππούς", "η κόρη"],
+        answer: 2,
+      },
+      {
+        q: "« le bleu » se dit :",
+        choices: ["μπλε", "κόκκινος", "πράσινος"],
+        answer: 0,
+      },
+      {
+        q: "« le fromage » se dit :",
+        choices: ["το γάλα", "το ψωμί", "το τυρί"],
+        answer: 2,
+      },
+    ],
+  },
 ];
 
 /* ---------- Niveaux A2 (grec) ---------- */
@@ -1039,6 +1123,95 @@ const A2_LESSONS = [
       },
     ],
   },
+  {
+    id: "a2-vocab-ville",
+    title: "Vocabulaire : en ville et en voyage",
+    emoji: "🧭",
+    theory: [
+      {
+        title: "Comment travailler ce module ?",
+        body: "Dix mots pour se déplacer et voyager en Grèce. Retiens chaque nom avec son article (η στάση, το εισιτήριο) : le genre compte pour les prépositions et les articles.",
+      },
+      {
+        title: "Pour se déplacer",
+        list: [
+          "η πόλη = la ville",
+          "ο δρόμος = la rue, la route",
+          "η στάση = l'arrêt (de bus)",
+          "ο σταθμός = la gare",
+        ],
+      },
+      {
+        title: "Pour voyager",
+        list: [
+          "το εισιτήριο = le billet",
+          "η βαλίτσα = la valise",
+          "το ξενοδοχείο = l'hôtel",
+          "το αεροδρόμιο = l'aéroport",
+          "η παραλία = la plage",
+          "ο χάρτης = la carte, le plan",
+        ],
+      },
+      {
+        title: "En situation",
+        body: "Το εισιτήριο για τη Θήρα κοστίζει σαράντα ευρώ. (Le billet pour Santorin coûte quarante euros.) — Η παραλία είναι δίπλα στο ξενοδοχείο. (La plage est à côté de l'hôtel.)",
+      },
+    ],
+    vocab: [
+      { word: "η πόλη", def: "la ville" },
+      { word: "ο δρόμος", def: "la rue, la route" },
+      { word: "η στάση", def: "l'arrêt (de bus)" },
+      { word: "ο σταθμός", def: "la gare" },
+      { word: "το εισιτήριο", def: "le billet" },
+      { word: "η βαλίτσα", def: "la valise" },
+      { word: "το ξενοδοχείο", def: "l'hôtel" },
+      { word: "το αεροδρόμιο", def: "l'aéroport" },
+      { word: "η παραλία", def: "la plage" },
+      { word: "ο χάρτης", def: "la carte, le plan" },
+    ],
+    quiz: [
+      {
+        q: "« le billet » se dit :",
+        choices: ["το εισιτήριο", "ο χάρτης", "η στάση"],
+        answer: 0,
+      },
+      {
+        q: "« η βαλίτσα » signifie :",
+        choices: ["l'hôtel", "la valise", "la gare"],
+        answer: 1,
+      },
+      {
+        q: "« l'aéroport » se dit :",
+        choices: ["το αεροδρόμιο", "ο σταθμός", "το ξενοδοχείο"],
+        answer: 0,
+      },
+      {
+        q: "Σε περιμένω ___. (Je t'attends à l'arrêt.)",
+        choices: ["στο σταθμό", "στη βαλίτσα", "στη στάση"],
+        answer: 2,
+      },
+      {
+        q: "« la gare » se dit :",
+        choices: ["η στάση", "ο σταθμός", "ο δρόμος"],
+        answer: 1,
+      },
+      {
+        q: "« Η παραλία είναι δίπλα στο ξενοδοχείο. » signifie :",
+        choices: ["La plage est à côté de l'hôtel.", "La ville est loin de la plage.", "La valise est restée dans le bus."],
+        answer: 0,
+      },
+      {
+        q: "« la carte (le plan) » se dit :",
+        choices: ["η πόλη", "ο χάρτης", "η παραλία"],
+        answer: 1,
+      },
+      {
+        q: "Quel nom est NEUTRE ?",
+        choices: ["η στάση", "ο σταθμός", "το εισιτήριο"],
+        answer: 2,
+      },
+    ],
+  },
 ];
 
 /* ---------- Niveau B1 (grec) ---------- */
@@ -1344,6 +1517,95 @@ const B1_LESSONS = [
       },
     ],
   },
+  {
+    id: "b1-vocab-travail",
+    title: "Vocabulaire : le travail et les émotions",
+    emoji: "💼",
+    theory: [
+      {
+        title: "Comment travailler ce module ?",
+        body: "Dix mots pour parler de ton travail et de tes émotions — des thèmes très présents aux examens de niveau B1. Retiens chaque mot avec son article et entraîne-toi à les réutiliser dans des phrases complètes.",
+      },
+      {
+        title: "Au travail",
+        list: [
+          "η δουλειά = le travail",
+          "ο μισθός = le salaire",
+          "ο προϊστάμενος = le supérieur, le chef",
+          "η συνέντευξη = l'entretien",
+          "η εμπειρία = l'expérience",
+        ],
+      },
+      {
+        title: "Les émotions",
+        list: [
+          "η χαρά = la joie",
+          "η λύπη = la tristesse",
+          "ο θυμός = la colère",
+          "η ανησυχία = l'inquiétude",
+          "περήφανος = fier",
+        ],
+      },
+      {
+        title: "En situation",
+        body: "Η συνέντευξη πήγε καλά και είμαι περήφανος. (L'entretien s'est bien passé et je suis fier.) — Ο μισθός μου έφτασε με καθυστέρηση. (Mon salaire est arrivé en retard.)",
+      },
+    ],
+    vocab: [
+      { word: "η δουλειά", def: "le travail" },
+      { word: "ο μισθός", def: "le salaire" },
+      { word: "ο προϊστάμενος", def: "le supérieur, le chef" },
+      { word: "η συνέντευξη", def: "l'entretien" },
+      { word: "η εμπειρία", def: "l'expérience" },
+      { word: "η χαρά", def: "la joie" },
+      { word: "η λύπη", def: "la tristesse" },
+      { word: "ο θυμός", def: "la colère" },
+      { word: "η ανησυχία", def: "l'inquiétude" },
+      { word: "περήφανος", def: "fier" },
+    ],
+    quiz: [
+      {
+        q: "« le salaire » se dit :",
+        choices: ["ο μισθός", "η δουλειά", "η χαρά"],
+        answer: 0,
+      },
+      {
+        q: "« η ανησυχία » signifie :",
+        choices: ["la colère", "l'inquiétude", "la joie"],
+        answer: 1,
+      },
+      {
+        q: "« la colère » se dit :",
+        choices: ["η λύπη", "η χαρά", "ο θυμός"],
+        answer: 2,
+      },
+      {
+        q: "Pour obtenir un poste, on passe :",
+        choices: ["μια συνέντευξη (un entretien)", "μια δουλειά (un travail)", "μια χαρά (une joie)"],
+        answer: 0,
+      },
+      {
+        q: "« fier » se dit :",
+        choices: ["περήφανος", "ανήσυχος", "λυπημένος"],
+        answer: 0,
+      },
+      {
+        q: "« la tristesse » se dit :",
+        choices: ["η ανησυχία", "η λύπη", "η χαρά"],
+        answer: 1,
+      },
+      {
+        q: "« Ο προϊστάμενος είναι ευχαριστημένος. » signifie :",
+        choices: ["Le supérieur est content.", "Le supérieur est fâché.", "Le collègue n'est pas venu."],
+        answer: 0,
+      },
+      {
+        q: "« l'expérience » se dit :",
+        choices: ["η γνώση", "η ευθύνη", "η εμπειρία"],
+        answer: 2,
+      },
+    ],
+  },
 ];
 
 /* ---------- Niveau B2 (grec) ---------- */
@@ -1523,6 +1785,93 @@ const B2_LESSONS = [
           "La paix ou la guerre",
         ],
         answer: 1,
+      },
+    ],
+  },
+  {
+    id: "b2-vocab-societe",
+    title: "Vocabulaire : mots abstraits et société",
+    emoji: "🧠",
+    theory: [
+      {
+        title: "Comment travailler ce module ?",
+        body: "Au niveau B2, le vocabulaire devient abstrait : société, économie, environnement. Retiens chaque mot avec son article (η ανάπτυξη, το περιβάλλον) — le genre sert aussi pour les accords et les débats à l'écrit.",
+      },
+      {
+        title: "La société",
+        list: [
+          "η ανάπτυξη = le développement",
+          "η ανεργία = le chômage",
+          "ο πληθυσμός = la population",
+          "η υγεία = la santé",
+        ],
+      },
+      {
+        title: "Les idées",
+        list: [
+          "η γνώση = la connaissance",
+          "η έρευνα = la recherche",
+          "ο στόχος = l'objectif",
+          "η ευθύνη = la responsabilité",
+        ],
+      },
+      {
+        title: "En situation",
+        body: "Η προστασία του περιβάλλοντος είναι ευθύνη όλων μας. (La protection de l'environnement est la responsabilité de tous.) — Η ανεργία των νέων είναι ένα σοβαρό πρόβλημα. (Le chômage des jeunes est un problème sérieux.)",
+      },
+    ],
+    vocab: [
+      { word: "η ανάπτυξη", def: "le développement" },
+      { word: "η ευθύνη", def: "la responsabilité" },
+      { word: "η γνώση", def: "la connaissance" },
+      { word: "το περιβάλλον", def: "l'environnement" },
+      { word: "η υγεία", def: "la santé" },
+      { word: "ο πληθυσμός", def: "la population" },
+      { word: "η έρευνα", def: "la recherche" },
+      { word: "ο στόχος", def: "l'objectif" },
+      { word: "η ανεργία", def: "le chômage" },
+      { word: "βιώσιμος", def: "durable" },
+    ],
+    quiz: [
+      {
+        q: "« le développement » se dit :",
+        choices: ["η ανάπτυξη", "η ευθύνη", "η έρευνα"],
+        answer: 0,
+      },
+      {
+        q: "« η ανεργία » signifie :",
+        choices: ["la santé", "la population", "le chômage"],
+        answer: 2,
+      },
+      {
+        q: "« la responsabilité » se dit :",
+        choices: ["η γνώση", "η ευθύνη", "η υγεία"],
+        answer: 1,
+      },
+      {
+        q: "« durable » (développement durable) se dit :",
+        choices: ["βίαιος", "άχρηστος", "βιώσιμος"],
+        answer: 2,
+      },
+      {
+        q: "« l'environnement » se dit :",
+        choices: ["ο πληθυσμός", "το περιβάλλον", "ο στόχος"],
+        answer: 1,
+      },
+      {
+        q: "« ο στόχος » signifie :",
+        choices: ["l'objectif", "le chômage", "la santé"],
+        answer: 0,
+      },
+      {
+        q: "« la population » se dit :",
+        choices: ["η πόλη", "η υγεία", "ο πληθυσμός"],
+        answer: 2,
+      },
+      {
+        q: "« la recherche » (scientifique) se dit :",
+        choices: ["η έρευνα", "η γνώση", "η ανεργία"],
+        answer: 0,
       },
     ],
   },
