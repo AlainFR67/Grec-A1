@@ -55,11 +55,12 @@ Un menu déroulant dans l'en-tête permet de choisir le niveau ; la progression 
 - **Examen final** : 20 questions tirées au sort dans les leçons du niveau choisi, un examen distinct par niveau (A1 à B2), meilleur score et nombre de tentatives enregistrés
 - **Niveaux** : menu déroulant A1 / A2 / B1 / B2 dans l'en-tête, leçons et progression par niveau (niveau mémorisé dans le navigateur)
 - **Progression** : meilleur score par leçon et cartes consultées, sauvegardés dans le navigateur (localStorage), sans compte ni serveur
-- **Vocabulaire** : une banque de 100 mots par niveau (400 mots au total) ; à chaque chargement de la page, 10 mots sont tirés au sort pour les cartes mémoire et le quiz du module — le tirage change à chaque visite
+- **Vocabulaire** : une banque de 200 mots par niveau (800 mots au total) ; à chaque chargement de la page, 10 mots sont tirés au sort pour les cartes mémoire et le quiz du module — le tirage change à chaque visite
 - **Numéro de version** affiché en bas de page pour vérifier que tu utilises la dernière version
 
 ## Versions
 
+- **2.3.0** (build du 2026-11-20 à 13:32 UTC) : banques de vocabulaire portées à 200 mots par niveau (800 mots au total), dont 10 tirés au sort à chaque chargement de la page
 - **2.2.0** (build du 2026-11-20 à 12:45 UTC) : banques de 100 mots de vocabulaire par niveau (400 mots au total), dont 10 tirés au sort à chaque chargement de la page pour les cartes mémoire et le quiz du module vocabulaire
 - **2.1.0** (build du 2026-11-20 à 12:30 UTC) : un module de vocabulaire thématique par niveau (10 mots + quiz chacun) — famille/couleurs (A1), ville et voyage (A2), travail et émotions (B1), société et mots abstraits (B2) — soit 23 leçons au total
 - **2.0.0** (build du 2026-11-20 à 12:05 UTC) : sélecteur de niveau A1/A2/B1/B2 avec 11 nouvelles leçons (5 A2, 4 B1, 2 B2), examens et progression par niveau
