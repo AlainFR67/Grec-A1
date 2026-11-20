@@ -564,7 +564,7 @@ const LESSONS = [
     theory: [
       {
         title: "Symboles de la Grèce",
-        body: "La capitale est Athènes (Αθήνα). Le drapeau est bleu et blanc avec une croix (l'orthodoxie) et neuf bandes. L'hymne national est le « Ύμνος εις την Ελευθερίαν » (Hymne à la liberté), écrit par Dionyssios Solomós. La devise héritée de la guerre d'indépendance est « Ελευθερία ή θάνατος » — « La liberté ou la mort ».",
+        body: "La capitale est Athènes (Αθήνα). Le drapeau est bleu et blanc avec une croix (l'orthodoxie) et neuf bandes : selon la tradition, les neuf bandes évoquent les neuf syllabes de la devise. L'hymne national est le « Ύμνος εις την Ελευθερίαν » (Hymne à la liberté), écrit par Dionyssios Solomós. La devise héritée de la guerre d'indépendance est « Ελευθερία ή θάνατος » — « La liberté ou la mort ».",
       },
       {
         title: "Les grandes dates",
@@ -572,8 +572,24 @@ const LESSONS = [
           "25 mars 1821 : début de la guerre d'indépendance contre l'Empire ottoman (fête nationale)",
           "25 mars aussi : l'Annonciation, fête religieuse majeure",
           "28 octobre 1940 : le « Non » (OXI) à l'ultimatum italien — deuxième fête nationale",
+          "1830 : l'indépendance de la Grèce est reconnue par les grandes puissances",
+          "1974 : par référendum, la Grèce devient une république parlementaire",
           "1981 : la Grèce rejoint la Communauté européenne · 2002 : l'euro remplace la drachme",
+          "2004 : les Jeux olympiques reviennent à Athènes, leur berceau",
         ],
+      },
+      {
+        title: "Valeurs et traditions",
+        list: [
+          "La démocratie : inventée à Athènes, de « dêmos » (le peuple) et « krátos » (le pouvoir)",
+          "La φιλοξενία (filoxénia) : l'hospitalité, un devoir sacré depuis l'Antiquité",
+          "Les prénoms : les Grecs fêtent leur « fête du nom » (ονομαστική εορτή), souvent plus que leur anniversaire",
+          "La Pâques orthodoxe : la plus grande fête de l'année, célébrée en famille",
+        ],
+      },
+      {
+        title: "La Grèce aujourd'hui",
+        body: "La Grèce est une république parlementaire, membre de l'Union européenne depuis 1981, de la zone euro depuis 2002 et de l'OTAN depuis 1952. Le Parlement (« Voulí ») siège à Athènes. Après Athènes, les grandes villes sont Thessalonique, le port du Pirée, Pátra et Héraklion en Crète.",
       },
       {
         title: "Mots français venus du grec",
@@ -583,9 +599,13 @@ const LESSONS = [
         title: "Personnalités et trésors",
         list: [
           "Socrate, Platon et Aristote : philosophes de l'Antiquité",
+          "Georges Séféris (1963) et Odysseas Elýtis (1979) : prix Nobel de littérature",
+          "María Callas : la cantatrice surnommée « la Divine »",
+          "Nikos Kazantzákis (écrivain de Zorba) et Mikis Theodorákis (compositeur de la musique de Zorba)",
+          "Melina Mercouri : actrice (Jamais le dimanche) devenue ministre de la Culture",
           "le mont Olympe (2 917 m), les îles de la mer Égée",
           "l'Acropole et le Parthénon, à Athènes",
-          "Dionyssios Solomós (hymne), Nikos Kazantzákis (Zorba, la nouvelle « Alexis Zorbas »)",
+          "Dionyssios Solomós (hymne)",
         ],
       },
     ],
@@ -598,6 +618,8 @@ const LESSONS = [
       { word: "Αθήνα", def: "Athènes (la capitale)" },
       { word: "Ακρόπολη", def: "l'Acropole (site emblématique d'Athènes)" },
       { word: "OXI", def: "le « Non » du 28 octobre 1940, fête nationale" },
+      { word: "η σημαία", def: "le drapeau" },
+      { word: "ο ύμνος", def: "l'hymne, la chanson nationale" },
     ],
     quiz: [
       {
@@ -639,6 +661,41 @@ const LESSONS = [
         q: "Le site le plus emblématique d'Athènes est :",
         choices: ["le Colisée", "l'Acropole et son Parthénon", "le monastère des Météores"],
         answer: 1,
+      },
+      {
+        q: "Combien de bandes compte le drapeau grec ?",
+        choices: ["sept", "neuf", "onze"],
+        answer: 1,
+      },
+      {
+        q: "En 1830, la Grèce obtient :",
+        choices: ["la reconnaissance de son indépendance", "l'entrée dans l'Union européenne", "sa première constitution républicaine"],
+        answer: 0,
+      },
+      {
+        q: "La Grèce est une :",
+        choices: ["monarchie constitutionnelle", "république parlementaire", "fédération de cités"],
+        answer: 1,
+      },
+      {
+        q: "Depuis 2002, la monnaie grecque est :",
+        choices: ["la drachme", "le franc", "l'euro"],
+        answer: 2,
+      },
+      {
+        q: "Quels écrivains grecs ont reçu le prix Nobel de littérature ?",
+        choices: ["Séféris et Elýtis", "Hugo et Zola", "Homère et Kazantzákis"],
+        answer: 0,
+      },
+      {
+        q: "Quelle cantatrice grecque est surnommée « la Divine » ?",
+        choices: ["Melina Mercouri", "Nana Mouskouri", "María Callas"],
+        answer: 2,
+      },
+      {
+        q: "En 2004, Athènes a accueilli :",
+        choices: ["les Jeux olympiques", "la Coupe du monde de football", "l'Exposition universelle"],
+        answer: 0,
       },
     ],
   },

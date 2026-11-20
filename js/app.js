@@ -1,8 +1,8 @@
 "use strict";
 
-const APP_VERSION = "2.11.0";
+const APP_VERSION = "2.12.0";
 const APP_BUILD_DATE = "2026-11-20";
-const APP_BUILD_TIME = "21:31";
+const APP_BUILD_TIME = "21:38";
 const EXAM_QUESTION_COUNT = 20;
 const EXAM_ID = "examen-final";
 const LEVEL_STORE_KEY = "grec-a1-level";

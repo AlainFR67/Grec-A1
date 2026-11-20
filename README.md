@@ -21,7 +21,7 @@ Un menu déroulant dans l'en-tête permet de choisir le niveau ; la progression 
 5. Les verbes en -ω au présent (modèle γράφω)
 6. Les nombres (0 à 20 et au-delà, demander le prix)
 7. La vie quotidienne (jours de la semaine, demander son chemin, l'heure)
-8. La Grèce : culture et civilisation (symboles, grandes dates, mots français venus du grec)
+8. La Grèce : culture et civilisation (symboles, grandes dates, valeurs et traditions, institutions, personnalités, mots français venus du grec)
 9. Vocabulaire : les mots du quotidien (banque de 100 mots — 10 tirés au sort à chaque chargement)
 
 ### A2 · Élémentaire — 6 leçons
@@ -60,6 +60,7 @@ Un menu déroulant dans l'en-tête permet de choisir le niveau ; la progression 
 
 ## Versions
 
+- **2.12.0** (build du 2026-11-20 à 21:38 UTC) : la leçon « La Grèce : culture et civilisation » est enrichie au niveau du module « La France : culture et citoyenneté » du cours de français — 6 volets (symboles, grandes dates, valeurs et traditions, institutions, mots venus du grec, personnalités), 10 cartes et 15 questions de quiz
 - **2.11.0** (build du 2026-11-20 à 21:31 UTC) : banque de vocabulaire B2 portée à 1 446 mots (4 946 mots uniques au total) — quatrième tranche B2, dans la perspective des repères CECRL (500/1 000/2 000/5 000)
 - **2.10.0** (build du 2026-11-20 à 19:09 UTC) : banque de vocabulaire B2 portée à 1 241 mots (4 741 mots uniques au total) — troisième tranche B2, dans la perspective des repères CECRL (500/1 000/2 000/5 000)
 - **2.9.0** (build du 2026-11-20 à 18:08 UTC) : banque de vocabulaire B2 portée à 1 030 mots (4 530 mots uniques au total) — deuxième tranche B2, dans la perspective des repères CECRL (500/1 000/2 000/5 000)
