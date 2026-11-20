@@ -1,0 +1,231 @@
+:root {
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --ink: #22263a;
+  --muted: #6b7186;
+  --accent: #3447c4;
+  --accent-soft: #e6eaf8;
+  --good: #1f8a4c;
+  --good-soft: #e3f5ea;
+  --bad: #c22f3d;
+  --bad-soft: #fbe5e7;
+  --line: #e2e6f0;
+  --radius: 14px;
+  --shadow: 0 6px 24px rgba(38, 52, 110, 0.08);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main { flex: 1; width: 100%; max-width: 880px; margin: 0 auto; padding: 24px 16px 48px; }
+
+.topbar {
+  background: linear-gradient(120deg, #2b3aa0, #4560e0);
+  color: #fff;
+  padding: 10px 0;
+  box-shadow: var(--shadow);
+}
+
+.topbar-inner {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 4px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logo { font-size: 1.2rem; margin: 0; font-weight: 700; }
+.logo span { opacity: 0.85; font-weight: 500; }
+
+.tabs { display: flex; gap: 6px; flex-wrap: wrap; }
+
+.tab {
+  border: none;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.tab:hover { background: rgba(255, 255, 255, 0.25); }
+.tab.active { background: #fff; color: var(--accent); font-weight: 600; }
+
+.hero {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px;
+  margin-bottom: 20px;
+}
+.hero h2 { margin: 0 0 6px; }
+.hero p { margin: 0; color: var(--muted); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card h3 { margin: 0; font-size: 1.05rem; display: flex; gap: 8px; align-items: center; }
+.card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+.card .actions { margin-top: auto; display: flex; gap: 8px; flex-wrap: wrap; }
+
+.progressbar {
+  height: 8px;
+  background: var(--accent-soft);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.progressbar > div { height: 100%; background: var(--accent); border-radius: 999px; transition: width 0.3s; }
+
+button.btn {
+  border: none;
+  border-radius: 10px;
+  padding: 9px 14px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 600;
+  transition: transform 0.1s, filter 0.15s;
+}
+button.btn:hover { filter: brightness(0.95); }
+button.btn:active { transform: scale(0.97); }
+button.btn.primary { background: var(--accent); color: #fff; }
+
+.backlink {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 0.92rem;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.panel {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+  padding: 22px;
+  margin-bottom: 18px;
+}
+.panel h2 { margin-top: 0; display: flex; align-items: center; gap: 10px; }
+.panel h3 { margin: 18px 0 6px; font-size: 1rem; color: var(--accent); }
+.panel p { line-height: 1.55; }
+.panel ul { line-height: 1.6; padding-left: 20px; }
+.panel li::marker { color: var(--accent); }
+
+.flashcard-scene { perspective: 1200px; max-width: 480px; margin: 24px auto; }
+.flashcard {
+  position: relative;
+  height: 240px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.45s;
+}
+.flashcard.flipped { transform: rotateY(180deg); }
+.flashcard .face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  background: var(--card);
+  border: 1px solid var(--line);
+}
+.flashcard .face.back {
+  transform: rotateY(180deg);
+  background: var(--accent-soft);
+}
+.flashcard .word { font-size: 1.7rem; font-weight: 700; }
+.flashcard .hint { color: var(--muted); font-size: 0.85rem; margin-top: 12px; }
+
+.flash-controls { display: flex; gap: 10px; justify-content: center; margin-top: 8px; }
+
+.quiz-header { display: flex; justify-content: space-between; color: var(--muted); font-size: 0.9rem; margin-bottom: 12px; }
+.quiz-question { font-size: 1.15rem; font-weight: 600; margin: 0 0 16px; }
+
+.choice {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: var(--card);
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  padding: 13px 16px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+.choice:hover { border-color: var(--accent); }
+.choice.correct { border-color: var(--good); background: var(--good-soft); }
+.choice.wrong { border-color: var(--bad); background: var(--bad-soft); }
+.choice:disabled { cursor: default; }
+
+.result-score { font-size: 1.1rem; font-weight: 700; margin: 0 0 6px; }
+.theme-tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 999px;
+  padding: 3px 10px;
+  margin-bottom: 12px;
+}
+.exam-badge { font-size: 2.4rem; margin: 0; }
+.result-msg { color: var(--muted); margin: 0 0 16px; }
+
+.stat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+.stat {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  box-shadow: var(--shadow);
+}
+.stat .name { font-weight: 600; margin-bottom: 6px; }
+.stat .detail { color: var(--muted); font-size: 0.85rem; margin-top: 6px; }
+
+.footer { text-align: center; color: var(--muted); font-size: 0.82rem; padding: 16px; }
+.footer .version { margin-top: 4px; font-size: 0.78rem; opacity: 0.85; }
+.footer .credits { margin: 6px 0 0; font-size: 0.75rem; font-style: italic; opacity: 0.75; }
+
+@media (max-width: 560px) {
+  .topbar-inner { flex-direction: column; align-items: flex-start; }
+  .flashcard .word { font-size: 1.3rem; }
+}
