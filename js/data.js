@@ -1649,8 +1649,8 @@ const B2_LESSONS = [
     quiz: [],
     theory: [
       {
-        title: "Une banque de 1 760 mots",
-        body: "Cette banque réunit 1 760 mots de niveau B2 : les institutions, l’économie, l’environnement, la technologie et les grandes notions de société (η ευθύνη, η ισότητα, η κρίση…), ainsi que le travail et les professions, la médecine et les spécialités, la faune et la botanique, l’industrie et le commerce, l’urbanisme, les médias, la gastronomie, les sciences et les arts, le numérique, la justice, la musique, l’immigration, la vie démocratique, l’énergie et les mines, la fiscalité et l’assurance, le commerce extérieur et la logistique, la mythologie et l’histoire, la linguistique et la rhétorique, avec de nombreux verbes, adjectifs et locutions du registre soutenu.",
+        title: "Une banque de 1 759 mots",
+        body: "Cette banque réunit 1 759 mots de niveau B2 : les institutions, l’économie, l’environnement, la technologie et les grandes notions de société (η ευθύνη, η ισότητα, η κρίση…), ainsi que le travail et les professions, la médecine et les spécialités, la faune et la botanique, l’industrie et le commerce, l’urbanisme, les médias, la gastronomie, les sciences et les arts, le numérique, la justice, la musique, l’immigration, la vie démocratique, l’énergie et les mines, la fiscalité et l’assurance, le commerce extérieur et la logistique, la mythologie et l’histoire, la linguistique et la rhétorique, avec de nombreux verbes, adjectifs et locutions du registre soutenu.",
       },
       {
         title: "Comment travailler ?",
