@@ -1649,8 +1649,8 @@ const B2_LESSONS = [
     quiz: [],
     theory: [
       {
-        title: "Une banque de 1956 mots",
-        body: "Cette banque réunit 1956 mots de niveau B2 : les institutions, l\u2019économie, l\u2019environnement, la technologie et les grandes notions de société (η ευθύνη, η ισότητα, η κρίση…), ainsi que le travail et les professions, la médecine et les spécialités, la faune et la botanique, l\u2019industrie et le commerce, l\u2019urbanisme, les médias, la gastronomie, les sciences et les arts, le numérique, la justice, la musique, l\u2019immigration, la vie démocratique, l\u2019énergie et les mines, la fiscalité et l\u2019assurance, le commerce extérieur et la logistique, la mythologie et l\u2019histoire, la linguistique et la rhétorique, et désormais la menuiserie et la métallurgie, la plomberie et le bâtiment, la presse et l\u2019édition, la bourse et la finance pénale, les jeux, les fêtes et les danses, l\u2019océanographie et l\u2019astronomie, la génétique et l\u2019écologie, avec de nombreux verbes, adjectifs et locutions du registre soutenu.",
+        title: "Une banque de 1 956 mots",
+        body: "Cette banque réunit 1 956 mots de niveau B2 : les institutions, l\u2019économie, l\u2019environnement, la technologie et les grandes notions de société (η ευθύνη, η ισότητα, η κρίση…), ainsi que le travail et les professions, la médecine et les spécialités, la faune et la botanique, l\u2019industrie et le commerce, l\u2019urbanisme, les médias, la gastronomie, les sciences et les arts, le numérique, la justice, la musique, l\u2019immigration, la vie démocratique, l\u2019énergie et les mines, la fiscalité et l\u2019assurance, le commerce extérieur et la logistique, la mythologie et l\u2019histoire, la linguistique et la rhétorique, et désormais la menuiserie et la métallurgie, la plomberie et le bâtiment, la presse et l\u2019édition, la bourse et la finance pénale, les jeux, les fêtes et les danses, l\u2019océanographie et l\u2019astronomie, la génétique et l\u2019écologie, avec de nombreux verbes, adjectifs et locutions du registre soutenu.",
       },
       {
         title: "Comment travailler ?",
