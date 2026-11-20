@@ -644,6 +644,899 @@ const LESSONS = [
   },
 ];
 
+/* ---------- Niveaux A2 (grec) ---------- */
+
+const A2_LESSONS = [
+  {
+    id: "a2-aoriste",
+    title: "L'aoriste : le passé simple",
+    emoji: "⏪",
+    theory: [
+      {
+        title: "Qu'est-ce que l'aoriste ?",
+        body: "En grec, le passé simple s'appelle l'aoriste (αόριστος). Il exprime une action accomplie une fois : Έγραψα ένα γράμμα (j'ai écrit une lettre). Presque tous les verbes prennent un augment (έ-) au début et utilisent le radical perfectif : γράφω devient έγραψα.",
+      },
+      {
+        title: "Le modèle διαβάζω (lire)",
+        list: [
+          "εγώ διάβασα (j'ai lu)",
+          "εσύ διάβασες (tu as lu)",
+          "αυτός / αυτή διάβασε (il / elle a lu)",
+          "εμείς διαβάσαμε (nous avons lu)",
+          "εσείς διαβάσατε (vous avez lu)",
+          "αυτοί διάβασαν (ils ont lu)",
+        ],
+      },
+      {
+        title: "Les irréguliers à connaître",
+        body: "Quelques verbes très courants sont irréguliers : έφαγα (j'ai mangé), ήπια (j'ai bu), είδα (j'ai vu), ήρθα (je suis venu(e)). Au pluriel, l'augment disparaît souvent : φάγαμε (nous avons mangé).",
+      },
+    ],
+    vocab: [
+      { word: "έγραψα", def: "j'ai écrit" },
+      { word: "διάβασα", def: "j'ai lu" },
+      { word: "έφαγα", def: "j'ai mangé" },
+      { word: "ήπια", def: "j'ai bu" },
+      { word: "είδα", def: "j'ai vu" },
+      { word: "ήρθα", def: "je suis venu(e)" },
+    ],
+    quiz: [
+      {
+        q: "Χθες ___ ένα βιβλίο. (Hier, j'ai lu un livre.)",
+        choices: ["διαβάζω", "διάβασα", "θα διαβάσω"],
+        answer: 1,
+      },
+      {
+        q: "L'augment de l'aoriste se place :",
+        choices: ["À la fin du verbe", "Au début du verbe", "Sur l'article"],
+        answer: 1,
+      },
+      {
+        q: "« J'ai mangé » se dit :",
+        choices: ["τρώω", "έφαγα", "θα φάω"],
+        answer: 1,
+      },
+      {
+        q: "Εμείς ___ στην ταβέρνα. (Nous avons mangé à la taverne.)",
+        choices: ["φάγαμε", "έφαγες", "τρώμε"],
+        answer: 0,
+      },
+      {
+        q: "« J'ai bu » se dit :",
+        choices: ["πίνω", "ήπια", "θα πιω"],
+        answer: 1,
+      },
+      {
+        q: "Au pluriel (nous, vous), l'augment έ- :",
+        choices: ["Est toujours obligatoire", "Disparaît souvent", "Devient -εσ"],
+        answer: 1,
+      },
+      {
+        q: "« Je suis venu(e) hier » se dit :",
+        choices: ["ήρθα χθες", "έρχομαι χθες", "θα έρθω χθες"],
+        answer: 0,
+      },
+      {
+        q: "Αυτός ___ ελληνικά στο σχολείο. (Il a appris le grec à l'école.)",
+        choices: ["μαθαίνει", "έμαθε", "θα μάθει"],
+        answer: 1,
+      },
+    ],
+    genVerbs: ["aoriste de γράφω", "aoriste de διαβάζω", "aoriste de φάω"],
+  },
+  {
+    id: "a2-futur",
+    title: "Le futur avec θα",
+    emoji: "⏭️",
+    theory: [
+      {
+        title: "La formation du futur",
+        body: "Le futur se forme avec la particule θα + la forme perfective : θα γράψω (j'écrirai). Pour la négation : δεν θα γράψω (je n'écrirai pas).",
+      },
+      {
+        title: "Le modèle γράφω",
+        list: [
+          "θα γράψω (j'écrirai) · δεν θα γράψω (je n'écrirai pas)",
+          "θα γράψεις (tu écriras)",
+          "θα γράψει (il / elle écrira)",
+          "θα γράψουμε (nous écrirons)",
+          "θα γράψετε (vous écrirez)",
+          "θα γράψουν (ils écriront)",
+        ],
+      },
+      {
+        title: "Les mots du temps",
+        list: [
+          "αύριο = demain",
+          "μετά = après",
+          "αργότερα = plus tard",
+          "σύντομα = bientôt",
+          "φέτος = cette année",
+        ],
+      },
+    ],
+    vocab: [
+      { word: "θα", def: "la particule qui marque le futur" },
+      { word: "αύριο", def: "demain" },
+      { word: "αργότερα", def: "plus tard" },
+      { word: "σύντομα", def: "bientôt" },
+      { word: "φέτος", def: "cette année" },
+      { word: "δεν θα… ποτέ", def: "ne… jamais (au futur)" },
+    ],
+    quiz: [
+      {
+        q: "Αύριο ___ στην Αθήνα. (Demain, j'irai à Athènes.)",
+        choices: ["πήγα", "θα πάω", "πάω"],
+        answer: 1,
+      },
+      {
+        q: "Comment forme-t-on le futur en grec ?",
+        choices: ["Avec θα + forme perfective", "Uniquement avec l'imparfait", "Avec έχω + infinitif"],
+        answer: 0,
+      },
+      {
+        q: "« Je n'écrirai pas » se dit :",
+        choices: ["δεν γράφω", "δεν θα γράψω", "μη γράψεις"],
+        answer: 1,
+      },
+      {
+        q: "« αύριο » signifie :",
+        choices: ["aujourd'hui", "hier", "demain"],
+        answer: 2,
+      },
+      {
+        q: "Εγώ ___ έναν καφέ. (Je boirai un café.)",
+        choices: ["θα πιω", "ήπια", "πίνω"],
+        answer: 0,
+      },
+      {
+        q: "« σύντομα » signifie :",
+        choices: ["bientôt", "lentement", "jamais"],
+        answer: 0,
+      },
+      {
+        q: "Θα ___ ελληνικά. (Elle apprendra le grec.)",
+        choices: ["μαθαίνει", "μάθει", "μαθαίνεις"],
+        answer: 1,
+      },
+      {
+        q: "« cette année » se dit :",
+        choices: ["φέτος", "πέρυσι", "τώρα"],
+        answer: 0,
+      },
+    ],
+    genVerbs: ["futur de γράφω", "futur de διαβάζω"],
+  },
+  {
+    id: "a2-possessifs",
+    title: "Les possessifs (μου, σου, του…)",
+    emoji: "🧳",
+    theory: [
+      {
+        title: "Une logique différente du français",
+        body: "En grec, le possessif se place après le nom : το σπίτι μου (ma maison, littéralement « la maison de moi »). Il s'accorde avec la personne et non avec le nom : το βιβλίο μου, η θάλασσα μου, τα βιβλία μου.",
+      },
+      {
+        title: "Les possessifs",
+        list: [
+          "μου = mon / ma / mes",
+          "σου = ton / ta / tes",
+          "του / της / του = son / sa / ses",
+          "μας = notre / nos",
+          "σας = votre / vos",
+          "τους = leur / leurs",
+        ],
+      },
+      {
+        title: "Exemples",
+        list: [
+          "η μητέρα μου = ma mère",
+          "ο φίλος σου = ton ami",
+          "ο γείτονάς τους = leur voisin",
+        ],
+      },
+    ],
+    vocab: [
+      { word: "μου", def: "mon / ma / mes (après le nom)" },
+      { word: "σου", def: "ton / ta / tes (après le nom)" },
+      { word: "μας", def: "notre / nos (après le nom)" },
+      { word: "σας", def: "votre / vos (après le nom)" },
+      { word: "το σπίτι μου", def: "ma maison" },
+      { word: "η μητέρα της", def: "sa mère" },
+    ],
+    quiz: [
+      {
+        q: "La place du possessif en grec :",
+        choices: ["Avant le nom (comme en français)", "Après le nom", "Toujours en fin de phrase"],
+        answer: 1,
+      },
+      {
+        q: "« ma maison » se dit :",
+        choices: ["μου το σπίτι", "το σπίτι μου", "το σπίτι σου"],
+        answer: 1,
+      },
+      {
+        q: "« ton ami » se dit :",
+        choices: ["ο φίλος σου", "ο φίλος μου", "η φίλη σου"],
+        answer: 0,
+      },
+      {
+        q: "En grec, le possessif s'accorde avec :",
+        choices: ["Le nom qu'il accompagne", "La personne (le possesseur)", "Le temps du verbe"],
+        answer: 1,
+      },
+      {
+        q: "« notre mère » se dit :",
+        choices: ["η μητέρα σας", "η μητέρα μας", "η μητέρα της"],
+        answer: 1,
+      },
+      {
+        q: "« leur voisin » se dit :",
+        choices: ["ο γείτονάς τους", "η γείτονας μου", "ο γείτονάς μας"],
+        answer: 0,
+      },
+      {
+        q: "Comment dit-on « mon livre » ?",
+        choices: ["το βιβλίο μου", "το βιβλίο σου", "του βιβλίου μου"],
+        answer: 0,
+      },
+      {
+        q: "« votre » (de politesse) se dit :",
+        choices: ["σας", "σου", "μας"],
+        answer: 0,
+      },
+    ],
+  },
+  {
+    id: "a2-comparatif",
+    title: "Le comparatif et le superlatif",
+    emoji: "📏",
+    theory: [
+      {
+        title: "La règle générale",
+        body: "Le comparatif se forme avec πιο + l'adjectif : πιο μεγάλος (plus grand), πιο ωραίος (plus beau). Le superlatif : ο πιο μεγάλος (le plus grand). La comparaison s'exprime avec από : πιο ψηλός από εμένα (plus grand que moi).",
+      },
+      {
+        title: "Les irréguliers",
+        list: [
+          "καλός → καλύτερος (bon → meilleur)",
+          "κακός → χειρότερος (mauvais → pire)",
+          "μεγάλος → μεγαλύτερος (grand → plus grand)",
+          "μικρός → μικρότερος (petit → plus petit)",
+          "πολύ → περισσότερο (beaucoup → plus)",
+        ],
+      },
+      {
+        title: "Exemples",
+        list: [
+          "Η θάλασσα είναι πιο ζεστή απ' ό,τι χθες. (La mer est plus chaude qu'hier.)",
+          "Η Αθήνα είναι η πιο μεγάλη πόλη της Ελλάδας. (Athènes est la plus grande ville de Grèce.)",
+        ],
+      },
+    ],
+    vocab: [
+      { word: "πιο", def: "plus (marque du comparatif)" },
+      { word: "καλύτερος", def: "meilleur" },
+      { word: "χειρότερος", def: "pire" },
+      { word: "μεγαλύτερος", def: "plus grand, plus âgé" },
+      { word: "μικρότερος", def: "plus petit, plus jeune" },
+      { word: "από", def: "que (dans le comparatif : plus… que)" },
+    ],
+    quiz: [
+      {
+        q: "Μια πόλη ___ απ' την Αθήνα. (Une ville plus grande qu'Athènes.)",
+        choices: ["πιο μεγάλη", "μεγάλη πιο", "μεγαλύτερος"],
+        answer: 0,
+      },
+      {
+        q: "Le comparatif le plus simple se forme avec :",
+        choices: ["πιο + adjectif", "un suffixe -ερος obligatoire", "πολύ + adjectif"],
+        answer: 0,
+      },
+      {
+        q: "« meilleur » se dit :",
+        choices: ["καλύτερος", "πιο καλός", "χειρότερος"],
+        answer: 0,
+      },
+      {
+        q: "« pire » se dit :",
+        choices: ["πιο καλός", "χειρότερος", "μικρότερος"],
+        answer: 1,
+      },
+      {
+        q: "Αυτή η ταβέρνα είναι ___ απ' όλες. (Cette taverne est la meilleure de toutes.)",
+        choices: ["η καλύτερη", "η καλή", "η χειρότερη"],
+        answer: 0,
+      },
+      {
+        q: "« plus petit » se dit :",
+        choices: ["μεγαλύτερος", "μικρότερος", "πιο ψηλά"],
+        answer: 1,
+      },
+      {
+        q: "Dans « πιο ψηλός από εμένα », « από » introduit :",
+        choices: ["La cause", "La personne ou la chose comparée", "Le lieu"],
+        answer: 1,
+      },
+      {
+        q: "Θέλω ___ καφέ. (Je veux plus de café.)",
+        choices: ["περισσότερο", "μικρότερο", "καλύτερο"],
+        answer: 0,
+      },
+    ],
+  },
+  {
+    id: "a2-sorties",
+    title: "Sorties et invitations",
+    emoji: "🎭",
+    theory: [
+      {
+        title: "Proposer une sortie",
+        body: "Pour proposer une sortie, on utilise θέλω να + un verbe : Θέλεις να πάμε στον κινηματογράφο ; (veux-tu qu'on aille au cinéma ?). Ou avec ας + subjonctif : Ας πάμε ! (allons-y !).",
+      },
+      {
+        title: "Accepter ou refuser",
+        list: [
+          "Βέβαια ! / Φυσικά ! = bien sûr !",
+          "Με μεγάλη χαρά ! = avec grand plaisir !",
+          "Συγγνώμη, δεν μπορώ. = désolé(e), je ne peux pas.",
+          "Ίσως = peut-être",
+        ],
+      },
+      {
+        title: "Où sortir ?",
+        body: "Pour dire où l'on va, on emploie σε + l'article accordé : στον κινηματογράφο (au cinéma), στην ταβέρνα (à la taverne), στο θέατρο (au théâtre), στο μουσείο (au musée).",
+      },
+    ],
+    vocab: [
+      { word: "Θέλεις να… ;", def: "veux-tu… ? (proposition)" },
+      { word: "Ας πάμε !", def: "allons-y !" },
+      { word: "Με μεγάλη χαρά !", def: "avec grand plaisir !" },
+      { word: "το σινεμά", def: "le cinéma" },
+      { word: "η ταβέρνα", def: "la taverne (restaurant grec)" },
+      { word: "το μουσείο", def: "le musée" },
+    ],
+    quiz: [
+      {
+        q: "Pour proposer « allons au cinéma ! », on dit :",
+        choices: ["Ας πάμε σινεμά !", "Ξεκινάμε σινεμά !", "Πάω σινεμά ;"],
+        answer: 0,
+      },
+      {
+        q: "« Θέλεις να πάμε … ; » signifie :",
+        choices: ["Tu peux partir ?", "Veux-tu qu'on aille… ?", "Nous avons envie de venir"],
+        answer: 1,
+      },
+      {
+        q: "« Avec grand plaisir ! » se dit :",
+        choices: ["Με μεγάλη χαρά !", "Ίσως !", "Δυστυχώς !"],
+        answer: 0,
+      },
+      {
+        q: "« au théâtre » se dit :",
+        choices: ["στο θέατρο", "στη θέατρο", "του θεάτρου"],
+        answer: 0,
+      },
+      {
+        q: "Refuser poliment une invitation :",
+        choices: ["Συγγνώμη, δεν μπορώ.", "Ας πάμε !", "Φυσικά !"],
+        answer: 0,
+      },
+      {
+        q: "« η ταβέρνα » est :",
+        choices: ["Un café-bar", "Un restaurant grec", "Un cinéma en plein air"],
+        answer: 1,
+      },
+      {
+        q: "« ίσως » signifie :",
+        choices: ["certainement", "peut-être", "jamais"],
+        answer: 1,
+      },
+      {
+        q: "« au musée » se dit :",
+        choices: ["στο μουσείο", "στην μουσείο", "του μουσείου"],
+        answer: 0,
+      },
+    ],
+  },
+];
+
+/* ---------- Niveau B1 (grec) ---------- */
+
+const B1_LESSONS = [
+  {
+    id: "b1-imparfait",
+    title: "L'imparfait (παρατατικός)",
+    emoji: "🕰️",
+    theory: [
+      {
+        title: "Quand l'utiliser ?",
+        body: "Le παρατατικός décrit une action continue ou répétée dans le passé : Όταν ήμουν μικρός, διάβαζα πολύ (quand j'étais petit, je lisais beaucoup). Il s'oppose à l'aoriste, qui marque une action ponctuelle accomplie.",
+      },
+      {
+        title: "Les irréguliers importants",
+        list: [
+          "είμαι → ήμουν, ήσουν, ήταν, ήμασταν, ήσασταν, ήταν (j'étais…)",
+          "έχω → είχα, είχες, είχε, είχαμε, είχατε, είχαν (j'avais…)",
+        ],
+      },
+      {
+        title: "Imparfait ou aoriste ?",
+        body: "Διάβαζα όταν τηλεφώνησες (je lisais quand tu as téléphoné) : διάβαζα est l'imparfait (l'arrière-plan), τηλεφώνησες est l'aoriste (l'action qui vient interrompre). C'est le contraste imparfait / passé composé du français.",
+      },
+    ],
+    vocab: [
+      { word: "έγραφα", def: "j'écrivais (imparfait)" },
+      { word: "διάβαζα", def: "je lisais (imparfait)" },
+      { word: "έπαιζα", def: "je jouais (imparfait)" },
+      { word: "πήγαινα", def: "j'allais (imparfait)" },
+      { word: "ήμουν", def: "j'étais" },
+      { word: "είχα", def: "j'avais" },
+    ],
+    quiz: [
+      {
+        q: "Όταν ήμουν μικρός, ___ chaque jour. (Quand j'étais petit, je jouais tous les jours.)",
+        choices: ["παίζω", "έπαιζα", "θα παίξω"],
+        answer: 1,
+      },
+      {
+        q: "Quelle est la fonction du παρατατικός ?",
+        choices: ["Raconter une action ponctuelle terminée", "Décrire une action continue ou répétée du passé", "Exprimer l'avenir"],
+        answer: 1,
+      },
+      {
+        q: "« j'étais » se dit :",
+        choices: ["είμαι", "ήμουν", "έχω"],
+        answer: 1,
+      },
+      {
+        q: "Διάβαζα όταν ___ τηλεφώνησες. (Je lisais quand tu…)",
+        choices: ["as téléphoné", "téléphonais", "téléphonerai"],
+        answer: 0,
+      },
+      {
+        q: "« j'avais » se dit :",
+        choices: ["έχω", "είχα", "ήμασταν"],
+        answer: 1,
+      },
+      {
+        q: "« Πήγαινα στην Ελλάδα κάθε καλοκαίρι » signifie :",
+        choices: ["Je vais en Grèce chaque été", "J'allais en Grèce chaque été", "J'irai en Grèce chaque été"],
+        answer: 1,
+      },
+      {
+        q: "Εμείς ___ στην Αθήνα τότε. (Nous habitions à Athènes à l'époque.)",
+        choices: ["μένουμε", "μέναμε", "θα μείνουμε"],
+        answer: 1,
+      },
+      {
+        q: "Pour décrire le fond d'une histoire (la météo, l'ambiance), on utilise :",
+        choices: ["L'aoriste", "Le παρατατικός (imparfait)", "Le futur"],
+        answer: 1,
+      },
+    ],
+    genVerbs: ["imparfait de γράφω", "imparfait de διαβάζω", "imparfait de είμαι"],
+  },
+  {
+    id: "b1-perfect",
+    title: "Le passé composé (έχω + participe perfectif)",
+    emoji: "✔️",
+    theory: [
+      {
+        title: "La formation",
+        body: "Le passé composé grec se forme avec έχω + la forme perfective non conjuguée (l'απαρέμφατο) : έχω γράψει (j'ai écrit), έχεις φάει ; (tu as mangé ?). L'απαρέμφατο de γράφω est γράψει, celui de διαβάζω est διαβάσει.",
+      },
+      {
+        title: "Le modèle",
+        list: [
+          "έχω γράψει (j'ai écrit)",
+          "έχεις γράψει (tu as écrit)",
+          "έχει γράψει (il a écrit)",
+          "έχουμε γράψει (nous avons écrit)",
+          "έχετε γράψει (vous avez écrit)",
+          "έχουν γράψει (ils ont écrit)",
+        ],
+      },
+      {
+        title: "Quand l'utiliser ?",
+        body: "Comme en français : pour une action passée avec un résultat présent ou une expérience vécue : Έχω πάει δύο φορές στην Ελλάδα (je suis allé deux fois en Grèce).",
+      },
+    ],
+    vocab: [
+      { word: "έχω φάει", def: "j'ai mangé (passé composé)" },
+      { word: "έχω δει", def: "j'ai vu (passé composé)" },
+      { word: "έχω πάει", def: "je suis allé (passé composé)" },
+      { word: "έχω πιει", def: "j'ai bu (passé composé)" },
+      { word: "δύο φορές", def: "deux fois" },
+      { word: "ήδη", def: "déjà" },
+    ],
+    quiz: [
+      {
+        q: "« J'ai mangé » (passé composé) se dit :",
+        choices: ["έχω φάει", "έφαγα", "θα φάω"],
+        answer: 0,
+      },
+      {
+        q: "Le passé composé grec se construit avec :",
+        choices: ["είμαι + aoriste", "έχω + forme perfective non conjuguée", "θα + verbe"],
+        answer: 1,
+      },
+      {
+        q: "Έχω ___ δύο φορές στην Ελλάδα. (Je suis allé/e deux fois en Grèce.)",
+        choices: ["πήγαινα", "πάει", "πηγαίνω"],
+        answer: 1,
+      },
+      {
+        q: "« déjà » se dit :",
+        choices: ["ήδη", "ακόμη", "όμως"],
+        answer: 0,
+      },
+      {
+        q: "« deux fois » se dit :",
+        choices: ["δύο φορές", "δύο ζωές", "δύο λεπτά"],
+        answer: 0,
+      },
+      {
+        q: "Εσείς ___ το βιβλίο ; (Avez-vous lu le livre ?)",
+        choices: ["έχετε διαβάσει", "έχουμε διαβάσει", "διαβάζετε"],
+        answer: 0,
+      },
+      {
+        q: "Quelle est la forme perfective (απαρέμφατο) de πίνω ?",
+        choices: ["πιει", "πίνει", "πόσιμο"],
+        answer: 0,
+      },
+      {
+        q: "« Έχω δει την Ακρόπολη » signifie :",
+        choices: ["Je vois l'Acropole", "J'ai vu l'Acropole", "Je verrai l'Acropole"],
+        answer: 1,
+      },
+    ],
+    genVerbs: ["perfect de γράφω", "perfect de διαβάζω"],
+  },
+  {
+    id: "b1-relatifs",
+    title: "Les pronoms relatifs (που, ο οποίος)",
+    emoji: "🔗",
+    theory: [
+      {
+        title: "Le pronom universel : που",
+        body: "που (invariable, sans accent) sert pour « qui », « que », « dont » : ο φίλος που μιλάει ελληνικά (l'ami qui parle grec), το βιβλίο που διάβασα (le livre que j'ai lu). C'est le pronom le plus courant à l'oral.",
+      },
+      {
+        title: "Le pronom formel : ο οποίος",
+        body: "ο οποίος / η οποία / το οποίο s'accorde avec son antécédent et se décline. On l'utilise surtout à l'écrit, souvent après une virgule, pour lever les ambiguïtés : ο φίλος, ο οποίος μιλάει ελληνικά.",
+      },
+      {
+        title: "Le relatif de lieu",
+        body: "« où » de lieu se rend par όπου (avec accent) : η πόλη όπου ζω (la ville où je vis). Attention : που sans accent = relatif, ενώ πού avec accent = question « où ? ».",
+      },
+    ],
+    vocab: [
+      { word: "που", def: "qui / que / dont (relatif invariable, sans accent)" },
+      { word: "ο οποίος", def: "lequel (masculin, déclinable, formel)" },
+      { word: "η οποία", def: "laquelle (féminin, déclinable)" },
+      { word: "το οποίο", def: "lequel (neutre, déclinable)" },
+      { word: "όπου", def: "où (relatif de lieu, avec accent)" },
+      { word: "πού ;", def: "où ? (question, avec accent)" },
+    ],
+    quiz: [
+      {
+        q: "« L'ami qui parle grec » se dit :",
+        choices: ["ο φίλος που μιλάει ελληνικά", "ο φίλος μιλάει που", "ο φίλος ο οποίος του"],
+        answer: 0,
+      },
+      {
+        q: "Le pronom relatif le plus courant à l'oral est :",
+        choices: ["ο οποίος", "που", "το οποίο"],
+        answer: 1,
+      },
+      {
+        q: "« η πόλη ___ ζω » (la ville où je vis) — quelle forme ?",
+        choices: ["που sans accent", "όπου avec accent", "πού interrogatif"],
+        answer: 1,
+      },
+      {
+        q: "« ο οποίος » s'accorde avec :",
+        choices: ["Le sujet de la principale", "Son antécédent", "Le verbe de la relative"],
+        answer: 1,
+      },
+      {
+        q: "« Le livre que j'ai lu » se dit :",
+        choices: ["το βιβλίο που διάβασα", "το βιβλίο ο οποίος διάβασα", "το διάβασα βιβλίο"],
+        answer: 0,
+      },
+      {
+        q: "Que signifie « πού ; » (avec accent) ?",
+        choices: ["Le mot interrogatif « où ? »", "Le relatif « qui »", "Un génitif"],
+        answer: 0,
+      },
+      {
+        q: "Pour rendre « dont », on utilise surtout :",
+        choices: ["πιο", "του οποίου (formel) ou une reformulation", "que + που ensemble"],
+        answer: 1,
+      },
+      {
+        q: "« La fille qui chante » se dit :",
+        choices: ["Η κοπέλα που τραγουδά", "Η κοπέλα τραγουδά που", "Το οποίο κοπέλα"],
+        answer: 0,
+      },
+    ],
+  },
+  {
+    id: "b1-opinions",
+    title: "Donner son avis et argumenter",
+    emoji: "💬",
+    theory: [
+      {
+        title: "Exprimer son opinion",
+        list: [
+          "Νομίζω ότι… = je pense que…",
+          "Κατά τη γνώμη μου… = à mon avis…",
+          "Σίγουρα = certainement",
+          "Ευτυχώς = heureusement",
+          "Δυστυχώς = malheureusement",
+        ],
+      },
+      {
+        title: "Les connecteurs logiques",
+        list: [
+          "επειδή = parce que",
+          "επομένως = donc, par conséquent",
+          "επιπλέον = de plus, en outre",
+          "ωστόσο / όμως = cependant, mais",
+          "από τη μία… από την άλλη = d'un côté… de l'autre",
+        ],
+      },
+      {
+        title: "Exemple d'argumentation",
+        body: "Νομίζω ότι το ελληνικό φαγητό είναι υγιεινό, επειδή χρησιμοποιεί λάδι και λαχανικά. Επιπλέον, είναι νόστιμο. (Je pense que la cuisine grecque est saine, parce qu'elle utilise de l'huile et des légumes. De plus, c'est délicieux.)",
+      },
+    ],
+    vocab: [
+      { word: "νομίζω", def: "je pense, je crois" },
+      { word: "Κατά τη γνώμη μου", def: "à mon avis" },
+      { word: "επειδή", def: "parce que" },
+      { word: "επομένως", def: "donc, par conséquent" },
+      { word: "ωστόσο", def: "cependant" },
+      { word: "Δυστυχώς", def: "malheureusement" },
+    ],
+    quiz: [
+      {
+        q: "« Je pense que… » se dit :",
+        choices: ["Νομίζω ότι…", "Καταλαβαίνω ότι…", "Ελπίζω ότι…"],
+        answer: 0,
+      },
+      {
+        q: "« parce que » se dit :",
+        choices: ["επομένως", "επειδή", "ωστόσο"],
+        answer: 1,
+      },
+      {
+        q: "« donc » (conséquence) se dit :",
+        choices: ["επομένως", "επειδή", "νομίζω"],
+        answer: 0,
+      },
+      {
+        q: "« cependant » se dit :",
+        choices: ["επιπλέον", "ωστόσο", "επειδή"],
+        answer: 1,
+      },
+      {
+        q: "« de plus, en outre » se dit :",
+        choices: ["επιπλέον", "επομένως", "δίπλα"],
+        answer: 0,
+      },
+      {
+        q: "« malheureusement » se dit :",
+        choices: ["Ευτυχώς", "Δυστυχώς", "Συγχαρητήρια"],
+        answer: 1,
+      },
+      {
+        q: "Pour présenter les deux faces d'un sujet, on dit :",
+        choices: ["από τη μία… από την άλλη", "επειδή… επομένως", "νομίζω… ότι"],
+        answer: 0,
+      },
+      {
+        q: "« Η θάλασσα είναι όμορφη, ___ είναι κρύα. » (…cependant elle est froide.)",
+        choices: ["ωστόσο", "επειδή", "επομένως"],
+        answer: 0,
+      },
+    ],
+  },
+];
+
+/* ---------- Niveau B2 (grec) ---------- */
+
+const B2_LESSONS = [
+  {
+    id: "b2-passive",
+    title: "Les verbes déponents (κοιμάμαι, φοβάμαι…)",
+    emoji: "🔄",
+    theory: [
+      {
+        title: "Qu'est-ce qu'un verbe déponent ?",
+        body: "Certains verbes grecs se conjuguent à la voix moyenne (désinences -μαι / -σαι / -ται), alors qu'ils ont un sens actif. On les appelle les déponents (αποθετικά) : κοιμάμαι (je dors), φοβάμαι (j'ai peur), στέκομαι (je me tiens debout).",
+      },
+      {
+        title: "Le modèle κοιμάμαι (dormir)",
+        list: [
+          "εγώ κοιμάμαι (je dors)",
+          "εσύ κοιμάσαι (tu dors)",
+          "αυτός / αυτή κοιμάται (il / elle dort)",
+          "εμείς κοιμόμαστε (nous dormons)",
+          "εσείς κοιμάστε (vous dormez)",
+          "αυτοί κοιμούνται (ils dorment)",
+        ],
+      },
+      {
+        title: "Le modèle φοβάμαι (avoir peur)",
+        list: [
+          "εγώ φοβάμαι (j'ai peur)",
+          "εσύ φοβάσαι (tu as peur)",
+          "αυτός / αυτή φοβάται (il / elle a peur)",
+          "εμείς φοβόμαστε (nous avons peur)",
+          "εσείς φοβάστε (vous avez peur)",
+          "αυτοί φοβούνται (ils ont peur)",
+        ],
+      },
+      {
+        title: "Le vrai passif",
+        body: "La voix passive proprement dite exprime « être + participe » : γράφεται (il est écrit), γράφονται (ils sont écrits), χτίζεται (elle est construite). En contexte, le même paradigme en -μαι sert donc de déponent (sens actif) ou de passif (sens subi), selon le verbe.",
+      },
+    ],
+    vocab: [
+      { word: "κοιμάμαι", def: "je dors" },
+      { word: "φοβάμαι", def: "j'ai peur" },
+      { word: "κοιμόμαστε", def: "nous dormons" },
+      { word: "ο ύπνος", def: "le sommeil" },
+      { word: "ο φόβος", def: "la peur" },
+      { word: "αποθετικό ρήμα", def: "verbe déponent" },
+    ],
+    quiz: [
+      {
+        q: "« Je dors » se dit :",
+        choices: ["κοιμάμαι", "κοιμάτε", "κοιμούνται"],
+        answer: 0,
+      },
+      {
+        q: "Les verbes déponents se conjuguent :",
+        choices: [
+          "Avec les désinences de la voix moyenne (-μαι, -σαι, -ται)",
+          "Comme tous les verbes en -ω",
+          "Seulement au passé",
+        ],
+        answer: 0,
+      },
+      {
+        q: "« J'ai peur » se dit :",
+        choices: ["φοβούμαι", "φοβάμαι", "φοβόμουν"],
+        answer: 1,
+      },
+      {
+        q: "Εμείς ___ μέχρι τη μία. (Nous dormons jusqu'à une heure.)",
+        choices: ["κοιμάστε", "κοιμάμαι", "κοιμόμαστε"],
+        answer: 2,
+      },
+      {
+        q: "Ο Γιάννης ___ στο σκοτάδι. (Giannis a peur du noir.)",
+        choices: ["φοβάται", "φοβάσαι", "φοβούνται"],
+        answer: 0,
+      },
+      {
+        q: "Que signifie « κοιμούνται » ?",
+        choices: ["Tu dors", "Ils dorment", "Nous nous couchons"],
+        answer: 1,
+      },
+      {
+        q: "« ο ύπνος » signifie :",
+        choices: ["la peur", "le lit", "le sommeil"],
+        answer: 2,
+      },
+      {
+        q: "Quel verbe n'est PAS déponent ?",
+        choices: ["κοιμάμαι", "γράψει", "φοβάμαι"],
+        answer: 1,
+      },
+    ],
+  },
+  {
+    id: "b2-institutions",
+    title: "La Grèce moderne : institutions et Europe",
+    emoji: "🏛️",
+    theory: [
+      {
+        title: "La république et les institutions",
+        list: [
+          "La Grèce est une république parlementaire depuis le référendum de 1974, après la chute de la dictature des colonels (1967-1974).",
+          "η Βουλή = le Parlement grec, installé à Athènes, place Syntagma.",
+          "ο Πρόεδρος της Δημοκρατίας = le Président de la République (rôle surtout honorifique).",
+          "ο Πρωθυπουργός = le Premier ministre, qui détient le pouvoir exécutif.",
+        ],
+      },
+      {
+        title: "La Grèce dans l'Europe",
+        list: [
+          "Depuis 1981 : la Grèce est membre de l'Union européenne (CEE à l'époque).",
+          "Depuis 2002 : l'euro (το ευρώ) est la monnaie grecque, à la place de la drachme (η δραχμή).",
+          "La Grèce fait partie de la zone euro et de l'espace Schengen.",
+        ],
+      },
+      {
+        title: "Le citoyen grec",
+        body: "Environ 90 % des Grecs sont orthodoxes (Ορθόδοξη Εκκλησία). Les fêtes nationales sont le 25 mars (fête de l'indépendance, Επέτειος της Επανάστασης) et le 28 octobre (jour du « Όχι », refus de l'ultimatum en 1940). La devise de la Révolution : « Ελευθερία ή θάνατος » (la liberté ou la mort).",
+      },
+    ],
+    vocab: [
+      { word: "η Βουλή", def: "le Parlement grec" },
+      { word: "η δημοκρατία", def: "la république / la démocratie" },
+      { word: "ο Πρωθυπουργός", def: "le Premier ministre" },
+      { word: "το ευρώ", def: "l'euro" },
+      { word: "η δραχμή", def: "la drachme (ancienne monnaie)" },
+      { word: "η εθνική γιορτή", def: "la fête nationale" },
+    ],
+    quiz: [
+      {
+        q: "Depuis quand la Grèce est-elle une république parlementaire ?",
+        choices: ["Depuis 1974", "Depuis 1830", "Depuis 1981"],
+        answer: 0,
+      },
+      {
+        q: "Comment s'appelle le Parlement grec ?",
+        choices: ["η Βουλή", "η Γερουσία", "η Κυβέρνηση"],
+        answer: 0,
+      },
+      {
+        q: "Depuis quand la Grèce est-elle membre de l'Union européenne ?",
+        choices: ["Depuis 1981", "Depuis 1974", "Depuis 1992"],
+        answer: 0,
+      },
+      {
+        q: "Quelle monnaie a remplacé la drachme ?",
+        choices: ["Le franc", "L'euro", "Le drachmo-dollar"],
+        answer: 1,
+      },
+      {
+        q: "Depuis quand l'euro circule-t-il en Grèce ?",
+        choices: ["Depuis 1981", "Depuis 1999", "Depuis 2002"],
+        answer: 2,
+      },
+      {
+        q: "Quelle est la religion majoritaire en Grèce ?",
+        choices: ["Le catholicisme", "L'orthodoxie", "L'islam"],
+        answer: 1,
+      },
+      {
+        q: "La fête nationale grecque du 25 mars célèbre :",
+        choices: [
+          "Le début de la Révolution de 1821",
+          "La fin de la dictature",
+          "L'entrée dans l'Union européenne",
+        ],
+        answer: 0,
+      },
+      {
+        q: "Que signifie « Ελευθερία ή θάνατος » ?",
+        choices: [
+          "Le roi ou la république",
+          "La liberté ou la mort",
+          "La paix ou la guerre",
+        ],
+        answer: 1,
+      },
+    ],
+  },
+];
+
+const LEVELS = {
+  A1: { label: "A1 · Débutant", lessons: LESSONS },
+  A2: { label: "A2 · Élémentaire", lessons: A2_LESSONS },
+  B1: { label: "B1 · Intermédiaire", lessons: B1_LESSONS },
+  B2: { label: "B2 · Avancé", lessons: B2_LESSONS },
+};
+
+const ALL_LESSONS = [...LESSONS, ...A2_LESSONS, ...B1_LESSONS, ...B2_LESSONS];
+
 const PRONOUNS = [
   { pronoun: "εγώ (je)", key: "εγώ" },
   { pronoun: "εσύ (tu)", key: "εσύ" },
@@ -660,4 +1553,14 @@ const VERB_TABLES = {
   "διαβάζω": { "εγώ": "διαβάζω", "εσύ": "διαβάζεις", "αυτός": "διαβάζει", "εμείς": "διαβάζουμε", "εσείς": "διαβάζετε", "αυτοί": "διαβάζουν" },
   "μαθαίνω": { "εγώ": "μαθαίνω", "εσύ": "μαθαίνεις", "αυτός": "μαθαίνει", "εμείς": "μαθαίνουμε", "εσείς": "μαθαίνετε", "αυτοί": "μαθαίνουν" },
   "πίνω": { "εγώ": "πίνω", "εσύ": "πίνεις", "αυτός": "πίνει", "εμείς": "πίνουμε", "εσείς": "πίνετε", "αυτοί": "πίνουν" },
+  "aoriste de γράφω": { "εγώ": "έγραψα", "εσύ": "έγραψες", "αυτός": "έγραψε", "εμείς": "γράψαμε", "εσείς": "γράψατε", "αυτοί": "έγραψαν" },
+  "aoriste de διαβάζω": { "εγώ": "διάβασα", "εσύ": "διάβασες", "αυτός": "διάβασε", "εμείς": "διαβάσαμε", "εσείς": "διαβάσατε", "αυτοί": "διάβασαν" },
+  "aoriste de φάω": { "εγώ": "έφαγα", "εσύ": "έφαγες", "αυτός": "έφαγε", "εμείς": "φάγαμε", "εσείς": "φάγατε", "αυτοί": "έφαγαν" },
+  "futur de γράφω": { "εγώ": "θα γράψω", "εσύ": "θα γράψεις", "αυτός": "θα γράψει", "εμείς": "θα γράψουμε", "εσείς": "θα γράψετε", "αυτοί": "θα γράψουν" },
+  "futur de διαβάζω": { "εγώ": "θα διαβάσω", "εσύ": "θα διαβάσεις", "αυτός": "θα διαβάσει", "εμείς": "θα διαβάσουμε", "εσείς": "θα διαβάσετε", "αυτοί": "θα διαβάσουν" },
+  "imparfait de γράφω": { "εγώ": "έγραφα", "εσύ": "έγραφες", "αυτός": "έγραφε", "εμείς": "γράφαμε", "εσείς": "γράφατε", "αυτοί": "έγραφαν" },
+  "imparfait de διαβάζω": { "εγώ": "διάβαζα", "εσύ": "διάβαζες", "αυτός": "διάβαζε", "εμείς": "διαβάζαμε", "εσείς": "διαβάζατε", "αυτοί": "διάβαζαν" },
+  "imparfait de είμαι": { "εγώ": "ήμουν", "εσύ": "ήσουν", "αυτός": "ήταν", "εμείς": "ήμασταν", "εσείς": "ήσασταν", "αυτοί": "ήταν" },
+  "perfect de γράφω": { "εγώ": "έχω γράψει", "εσύ": "έχεις γράψει", "αυτός": "έχει γράψει", "εμείς": "έχουμε γράψει", "εσείς": "έχετε γράψει", "αυτοί": "έχουν γράψει" },
+  "perfect de διαβάζω": { "εγώ": "έχω διαβάσει", "εσύ": "έχεις διαβάσει", "αυτός": "έχει διαβάσει", "εμείς": "έχουμε διαβάσει", "εσείς": "έχετε διαβάσει", "αυτοί": "έχουν διαβάσει" },
 };

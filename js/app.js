@@ -1,17 +1,28 @@
 "use strict";
 
-const APP_VERSION = "1.0.0";
+const APP_VERSION = "2.0.0";
 const APP_BUILD_DATE = "2026-11-20";
-const APP_BUILD_TIME = "11:50";
+const APP_BUILD_TIME = "12:05";
 const EXAM_QUESTION_COUNT = 20;
 const EXAM_ID = "examen-final";
+const LEVEL_STORE_KEY = "grec-a1-level";
 const QUIZ_LENGTH = 10;
 
 const app = document.getElementById("app");
 const tabs = document.querySelectorAll(".tab");
 
 const STORE_KEY = "grec-a1-progress";
+function loadLevel() {
+  try {
+    const lvl = JSON.parse(localStorage.getItem(LEVEL_STORE_KEY));
+    return LEVELS[lvl] ? lvl : "A1";
+  } catch {
+    return "A1";
+  }
+}
+
 let state = {
+  level: loadLevel(),
   view: "home",
   lessonId: null,
   cardLessonId: null,
@@ -40,7 +51,13 @@ function saveProgress(progress) {
   localStorage.setItem(STORE_KEY, JSON.stringify(progress || loadProgress()));
 }
 
-const getLesson = (id) => LESSONS.find((l) => l.id === id);
+const getLesson = (id) => ALL_LESSONS.find((l) => l.id === id);
+
+const levelLessons = () => LEVELS[state.level].lessons;
+
+function examId() {
+  return EXAM_ID + "-" + state.level;
+}
 
 function setView(view) {
   state.view = view;
@@ -52,6 +69,21 @@ function setView(view) {
 tabs.forEach((t) =>
   t.addEventListener("click", () => setView(t.dataset.view))
 );
+
+function initLevelSelect() {
+  const select = document.getElementById("level-select");
+  if (!select) return;
+  select.value = state.level;
+  select.addEventListener("change", () => {
+    state.level = select.value;
+    localStorage.setItem(LEVEL_STORE_KEY, JSON.stringify(state.level));
+    state.view = "home";
+    state.lessonId = null;
+    state.cardLessonId = null;
+    state.quizLessonId = null;
+    render();
+  });
+}
 
 function initVersion() {
   const elv = document.getElementById("app-version");
@@ -193,7 +225,7 @@ function render() {
 
 function renderHome() {
   const progress = loadProgress();
-  const cards = LESSONS.map((lesson) => {
+  const cards = levelLessons().map((lesson) => {
     const quiz = progress.quizzes[lesson.id];
     const best = quiz ? Math.round((quiz.bestPercent)) : null;
     const pct = best === null ? 0 : best;
@@ -214,14 +246,14 @@ function renderHome() {
     `;
   }).join("");
 
-  const exam = progress.quizzes[EXAM_ID];
+  const exam = progress.quizzes[examId()];
 
   app.innerHTML = `
     <section class="hero">
       <h2>Bienvenue ! 👋</h2>
-      <p>Révise les bases du grec moderne niveau A1 : alphabet, prononciation, vocabulaire et grammaire. Choisis une leçon, révise avec les cartes mémoire puis teste-toi avec le quiz.</p>
+      <p>Révise les bases du grec moderne niveau ${state.level} : alphabet, prononciation, vocabulaire et grammaire. Choisis une leçon, révise avec les cartes mémoire puis teste-toi avec le quiz.</p>
       <div class="flash-controls" style="justify-content:flex-start;margin-top:12px;">
-        <button class="btn" id="hero-exam">🎓 Examen final${exam ? ` — meilleur score : ${exam.bestPercent}%` : ""}</button>
+        <button class="btn" id="hero-exam">🎓 Examen ${state.level}${exam ? ` — meilleur score : ${exam.bestPercent}%` : ""}</button>
       </div>
     </section>
     <div class="grid">${cards}</div>
@@ -288,7 +320,7 @@ function renderLesson(id) {
 /* ---------- Cartes mémoire ---------- */
 
 function renderCards() {
-  const lesson = getLesson(state.cardLessonId) || LESSONS[0];
+  const lesson = getLesson(state.cardLessonId) || levelLessons()[0];
   const idx = Math.min(state.cardIndex, lesson.vocab.length - 1);
   const card = lesson.vocab[idx];
 
@@ -354,19 +386,19 @@ function renderCards() {
 /* ---------- Examen final ---------- */
 
 function getExamProgress() {
-  return loadProgress().quizzes[EXAM_ID] || null;
+  return loadProgress().quizzes[examId()] || null;
 }
 
 function renderExam() {
   const exam = getExamProgress();
-  const totalQuestions = LESSONS.reduce((n, l) => n + l.quiz.length, 0);
+  const totalQuestions = levelLessons().reduce((n, l) => n + l.quiz.length, 0);
 
   app.innerHTML = `
     <section class="panel" style="text-align:center;">
-      <h2>🎓 Examen final</h2>
+      <h2>🎓 Examen final ${state.level}</h2>
       <p class="exam-badge">🏅</p>
       <p style="line-height:1.6;">
-        ${EXAM_QUESTION_COUNT} questions tirées au sort dans les ${LESSONS.length} leçons
+        ${EXAM_QUESTION_COUNT} questions tirées au sort dans les ${levelLessons().length} leçons
         (${totalQuestions} questions au total).<br />
         À chaque question, le thème est indiqué pour t'aider à te repérer.
       </p>
@@ -387,7 +419,7 @@ function renderExam() {
 
 function startExam() {
   let pool = [];
-  LESSONS.forEach((lesson) => {
+  levelLessons().forEach((lesson) => {
     buildQuizPool(lesson).forEach((q) => {
       pool.push({
         q,
@@ -416,14 +448,14 @@ function renderExamResult() {
   const pct = Math.round((state.quizScore / total) * 100);
 
   const msg =
-    pct === 100 ? "Sans faute ! Tu es un(e) champion(ne) du grec A1. 🏆"
-    : pct >= 80 ? "Excellent ! Niveau A1 solidement acquis. 🌟"
+    pct === 100 ? `Sans faute ! Tu es un(e) champion(ne) du grec ${state.level}. 🏆`
+    : pct >= 80 ? `Excellent ! Niveau ${state.level} solidement acquis. 🌟`
     : pct >= 60 ? "C'est bien, encore quelques révisions et ce sera parfait. 💪"
     : "Reprends les leçons qui posent problème, puis retente ta chance !";
 
   const progress = loadProgress();
-  const prev = progress.quizzes[EXAM_ID];
-  progress.quizzes[EXAM_ID] = {
+  const prev = progress.quizzes[examId()];
+  progress.quizzes[examId()] = {
     bestPercent: prev ? Math.max(prev.bestPercent, pct) : pct,
     lastPercent: pct,
     attempts: (prev && prev.attempts ? prev.attempts : 0) + 1,
@@ -528,7 +560,7 @@ function renderQuizResult() {
   const pct = Math.round((state.quizScore / total) * 100);
 
   const msg =
-    pct === 100 ? "Parfait ! Niveau A1 maîtrisé sur ce thème. 🎉"
+    pct === 100 ? `Parfait ! Niveau ${state.level} maîtrisé sur ce thème. 🎉`
     : pct >= 70 ? "Très bien, tu y es presque !"
     : pct >= 50 ? "Pas mal, continue à réviser. 💪"
     : "Relis le cours puis retente le quiz !";
@@ -561,11 +593,11 @@ function renderQuizResult() {
 
 function renderProgress() {
   const progress = loadProgress();
-  const exam = progress.quizzes[EXAM_ID];
+  const exam = progress.quizzes[examId()];
 
   const examRow = `
     <div class="stat">
-      <div class="name">🎓 Examen final</div>
+      <div class="name">🎓 Examen final ${state.level}</div>
       <div class="progressbar"><div style="width:${exam ? exam.bestPercent : 0}%"></div></div>
       <div class="detail">
         ${exam
@@ -577,7 +609,7 @@ function renderProgress() {
     </div>
   `;
 
-  const rows = LESSONS.map((lesson) => {
+  const rows = levelLessons().map((lesson) => {
     const quiz = progress.quizzes[lesson.id];
     const seen = progress.cardsSeen[lesson.id] || 0;
     return `
@@ -600,7 +632,7 @@ function renderProgress() {
       <p style="color:var(--muted);">
         ${totalQuizzes === 0
           ? "Fais ton premier quiz pour suivre tes progrès."
-          : `Tu as tenté ${totalQuizzes} quiz (leçons et examens) sur ${LESSONS.length + 1}. Continue !`}
+          : `Tu as tenté ${totalQuizzes} quiz (leçons et examens) sur ${levelLessons().length + 1}. Continue !`}
       </p>
       <div class="stat-grid">${examRow}${rows}</div>
     </section>
@@ -610,4 +642,5 @@ function renderProgress() {
 }
 
 initVersion();
+initLevelSelect();
 render();

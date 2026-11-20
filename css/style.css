@@ -46,8 +46,20 @@ main { flex: 1; width: 100%; max-width: 880px; margin: 0 auto; padding: 24px 16p
   gap: 10px;
 }
 
-.logo { font-size: 1.2rem; margin: 0; font-weight: 700; }
+.logo { font-size: 1.2rem; margin: 0; font-weight: 700; display: flex; align-items: center; gap: 10px; }
 .logo span { opacity: 0.85; font-weight: 500; }
+
+.level-select {
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  cursor: pointer;
+}
+.level-select option { color: var(--ink); background: #fff; }
 
 .tabs { display: flex; gap: 6px; flex-wrap: wrap; }
 
