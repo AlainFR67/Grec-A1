@@ -55,11 +55,12 @@ Un menu déroulant dans l'en-tête permet de choisir le niveau ; la progression 
 - **Examen final** : 20 questions tirées au sort dans les leçons du niveau choisi, un examen distinct par niveau (A1 à B2), meilleur score et nombre de tentatives enregistrés
 - **Niveaux** : menu déroulant A1 / A2 / B1 / B2 dans l'en-tête, leçons et progression par niveau (niveau mémorisé dans le navigateur)
 - **Progression** : meilleur score par leçon et cartes consultées, sauvegardés dans le navigateur (localStorage), sans compte ni serveur
-- **Vocabulaire** : une banque de 500 mots en A1, de 1 000 mots en A2, de 2 000 mots en B1 et de 1 446 mots en B2 (4 946 mots au total) ; à chaque chargement de la page, 10 mots sont tirés au sort pour les cartes mémoire et le quiz du module — le tirage change à chaque visite
+- **Vocabulaire** : une banque de 500 mots en A1, de 1 000 mots en A2, de 2 000 mots en B1 et de 1 759 mots en B2 (5 259 mots au total) ; à chaque chargement de la page, 10 mots sont tirés au sort pour les cartes mémoire et le quiz du module — le tirage change à chaque visite
 - **Numéro de version** affiché en bas de page pour vérifier que tu utilises la dernière version
 
 ## Versions
 
+- **2.13.0** (build du 2026-11-20 à 21:47 UTC) : banque de vocabulaire B2 portée à 1 759 mots (5 259 mots uniques au total) — cinquième tranche B2, dans la perspective des repères CECRL (500/1 000/2 000/5 000)
 - **2.12.0** (build du 2026-11-20 à 21:38 UTC) : la leçon « La Grèce : culture et civilisation » est enrichie au niveau du module « La France : culture et citoyenneté » du cours de français — 6 volets (symboles, grandes dates, valeurs et traditions, institutions, mots venus du grec, personnalités), 10 cartes et 15 questions de quiz
 - **2.11.0** (build du 2026-11-20 à 21:31 UTC) : banque de vocabulaire B2 portée à 1 446 mots (4 946 mots uniques au total) — quatrième tranche B2, dans la perspective des repères CECRL (500/1 000/2 000/5 000)
 - **2.10.0** (build du 2026-11-20 à 19:09 UTC) : banque de vocabulaire B2 portée à 1 241 mots (4 741 mots uniques au total) — troisième tranche B2, dans la perspective des repères CECRL (500/1 000/2 000/5 000)
