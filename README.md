@@ -12,7 +12,7 @@ python3 -m http.server 8080
 
 Un menu déroulant dans l'en-tête permet de choisir le niveau ; la progression et l'examen final sont enregistrés séparément pour chaque niveau.
 
-### A1 · Débutant — 9 leçons
+### A1 · Débutant — 10 leçons
 
 1. L'alphabet grec et sa prononciation (24 lettres, sons doubles, accent tonique)
 2. Se saluer et se présenter (Γεια σου / Γεια σας, se présenter, formules de politesse)
@@ -23,8 +23,9 @@ Un menu déroulant dans l'en-tête permet de choisir le niveau ; la progression 
 7. La vie quotidienne (jours de la semaine, demander son chemin, l'heure)
 8. La Grèce : culture et civilisation (symboles, grandes dates, valeurs et traditions, institutions, personnalités, mots français venus du grec)
 9. Vocabulaire : les mots du quotidien (banque de 100 mots — 10 tirés au sort à chaque chargement)
+10. Connecteurs logiques : les petits mots qui relient (conjonctions de coordination και, ή, αλλά, adverbes de liaison, subordination lorsque, parce que, si, pour, locutions et…… / ou……ou / non……mais)
 
-### A2 · Élémentaire — 6 leçons
+### A2 · Élémentaire — 7 leçons
 
 1. L'aoriste : le passé simple (l'augment, modèles διαβάζω / γράφω, irréguliers έφαγα, ήπια, είδα, ήρθα)
 2. Le futur avec θα (particule θα + forme perfective, négation δεν θα, mots du temps)
@@ -32,20 +33,23 @@ Un menu déroulant dans l'en-tête permet de choisir le niveau ; la progression 
 4. Le comparatif et le superlatif (πιο + adjectif, irréguliers καλύτερος, χειρότερος…)
 5. Sorties et invitations (Θέλεις να… ; Ας πάμε !, σε + article)
 6. Vocabulaire : la vie pratique (banque de 100 mots — 10 tirés au sort à chaque chargement)
+7. Relier ses phrases : cependant, donc, c'est-à-dire (cependant, par ailleurs, donc, c'est-à-dire, corrélations autant……autant / ni……ni / soit……soit)
 
-### B1 · Intermédiaire — 5 leçons
+### B1 · Intermédiaire — 6 leçons
 
 1. L'imparfait (παρατατικός) : ήμουν, είχα…, contraste imparfait / aoriste
 2. Le passé composé (έχω + forme perfective non conjuguée)
 3. Les pronoms relatifs (που, ο οποίος, όπου)
 4. Donner son avis et argumenter (νομίζω ότι, connecteurs logiques)
 5. Vocabulaire : médias, formation et émotions (banque de 100 mots — 10 tirés au sort à chaque chargement)
+6. Connecteurs du discours suivi : bien que, donc, par exemple (même si, bien que, que, en attendant, par conséquent, en d'autres termes ainsi que)
 
-### B2 · Avancé — 3 leçons
+### B2 · Avancé — 4 leçons
 
 1. Les verbes déponents (κοιμάμαι, φοβάμαι…) et la voix moyenne
 2. La Grèce moderne : institutions et Europe (république 1974, la Βουλή, Europe 1981, euro 2002, fêtes nationales)
 3. Vocabulaire : société et monde contemporain (banque de 100 mots — 10 tirés au sort à chaque chargement)
+4. Connecteurs du registre soutenu : en attendant, par ailleurs, en conséquence, immédiatement dès que
 
 ## Fonctionnalités
 
@@ -60,6 +64,7 @@ Un menu déroulant dans l'en-tête permet de choisir le niveau ; la progression 
 
 ## Versions
 
+- **2.17.0** (build du 2026-11-20 à 22:22 UTC) : nouveau module « Connecteurs logiques » dans les 4 niveaux — une leçon par niveau couvrant les conjonctions de coordination (και, ή, αλλά, ούτε), les adverbes de liaison (τώρα, τότε, επίσης, ώστοσο, άρα, εξάλλου, εν τω μεταξύ, εν συνεχεία), les conjonctions de subordination (όταν, γιατί, αν, για να, ότι, αφού, εφόσον, δεδομένου ότι…) et les locutions conjonctives de coordination et lien logique — 51 mots de vocabulaire et 40 questions de quiz ajoutés, soit 27 leçons au total
 - **2.16.0** (build du 2026-11-20 à 22:03 UTC) : banque de vocabulaire B2 portée à 2 047 mots (5 547 mots uniques au total) — huitième tranche B2 : sciences (théorème, physique quantique, isotope, catalyseur, constellation), économie d'entreprise (fusion, rachat, amortissement, créance), droit (jurisprudence, amendement, octroi), diplomatie (ambassadeur, consul, traité), botanique et entomologie, métaux, mécanique fine (piston, engrenage, valve, levier), gravure et lithographie, verbes composés du registre soutenu et locutions connectives — dans la perspective des repères CECRL (500/1 000/2 000/5 000)
 - **2.15.0** (build du 2026-11-20 à 22:00 UTC) : banque de vocabulaire B2 portée à 2 010 mots (5 510 mots uniques au total) — septième tranche B2 : volcanisme et sismologie, aéronautique et navigation, pharmacie, peinture d'art et théâtre, monde du travail et syndicats, psychologie des relations (consentement, mépris, harcèlement), informatique et réseaux, handicap, habitat, locutions connectives et expressions imagées — dans la perspective des repères CECRL (500/1 000/2 000/5 000)
 - **2.14.0** (build du 2026-11-20 à 21:56 UTC) : banque de vocabulaire B2 portée à 1 956 mots (5 456 mots uniques au total) — sixième tranche B2 : menuiserie et métallurgie, plomberie et bâtiment, peinture et décoration, presse et édition, arts culinaires, jeux et fêtes, danses traditionnelles, météo extrême, e-commerce et publicité, gestion et recrutement, génétique, océanographie et astronomie, écologie, artisanat d'art, finance et justice pénale, plus de nouvelles locutions du registre soutenu — dans la perspective des repères CECRL (500/1 000/2 000/5 000)

@@ -718,6 +718,78 @@ const LESSONS = [
     ],
   },
 
+  {
+    id: "connecteurs-a1",
+    title: "Les petits mots qui relient (et, ou, mais, quand, parce que)",
+    emoji: "🔗",
+    theory: [
+      {
+        title: "Pourquoi les connecteurs ?",
+        body: "Les connecteurs sont les petits mots qui relient les mots et les phrases : και (et), αλλά (mais), όταν (quand), γιατί (parce que)… Sans eux, on parle par aplats. Ce sont eux qui donnent sa logique à une conversation.",
+      },
+      {
+        title: "Conjonctions de coordination : και, ή, αλλά, ούτε",
+        list: [
+          "και = et → Μαρία και Νίκος (María et Níkos)",
+          "ή = ou → τσάι ή καφές (thé ou café)",
+          "αλλά = mais → θέλω να έρθω, αλλά είμαι κουρασμένος (je veux venir, mais je suis fatigué)",
+          "μούτε / ούτε = ni, non plus → Δεν ήρθαμε, ούτε αγόρασε (nous ne sommes pas venus, et il n'a pas acheté non plus)",
+        ],
+      },
+      {
+        title: "Adverbes de liaison : τώρα, τότε, επίσης",
+        list: [
+          "τώρα = maintenant → Τώρα καταλαβαίνω (maintenant je comprends)",
+          "τότε = alors, à ce moment-là → Τότε ζούσε στην Αθήνα (alors il vivait à Athènes)",
+          "επίσης = aussi, également → Θα φέρω και ψωμί, επίσης γιαούρτι",
+        ],
+      },
+      {
+        title: "Conjonctions de subordination : όταν, γιατί, αν, για να, ότι",
+        list: [
+          "όταν = quand → Όταν σε βλέπω, χαίρομαι (quand je te vois, je me réjouis)",
+          "γιατί = parce que, pourquoi → Δεν ήρθα γιατί βρέχει (je ne suis pas venu parce qu'il pleut)",
+          "αν = si → Αν βρέξει, θα μείνουμε (s'il pleut, nous resterons)",
+          "για να = pour, afin de → Μαθαίνω ελληνικά για να δουλέψω (j'apprends le grec pour travailler)",
+          "ότι = que → Νομίζω ότι θα έρθει (je pense qu'il viendra)",
+        ],
+      },
+      {
+        title: "Locutions de coordination élémentaires",
+        list: [
+          "και…… = et…… (redoublée : και αύριο και μεθαύριο = et demain et après-demain)",
+          "ή……ή = ou…… ou (ή τσάι ή καφές = ou du thé ou du café)",
+          "όχι……αλλά = non……mais (δεν είναι ακριβώς αυτό, μα μοιάζει)"
+        ],
+      },
+    ],
+    vocab: [
+      { word: "και", def: "et" },
+      { word: "ή", def: "ou" },
+      { word: "αλλά", def: "mais" },
+      { word: "μούτε", def: "ni, non plus" },
+      { word: "τώρα", def: "maintenant" },
+      { word: "τότε", def: "alors, à ce moment-là" },
+      { word: "επίσης", def: "aussi, également" },
+      { word: "όταν", def: "quand, lorsque" },
+      { word: "γιατί", def: "pourquoi, parce que" },
+      { word: "αν", def: "si" },
+      { word: "για να", def: "pour, afin de" },
+      { word: "ότι", def: "que (dans une subordonnée)" }
+    ],
+    quiz: [
+      { q: "« Μαρία και Νίκος » signifie :", choices: ["María et Níkos", "María ou Níkos", "María parce que Níkos"], answer: 0 },
+      { q: "Quel mot signifie « mais » ?", choices: ["και", "αλλά", "όταν"], answer: 1 },
+      { q: "« Τώρα καταλαβαίνω » signifie :", choices: ["Alors je comprenais", "Maintenant je comprends", "Si je comprends"], answer: 1 },
+      { q: "Quel connecteur introduit une cause (parce que) ?", choices: ["γιατί", "ή", "όταν"], answer: 0 },
+      { q: "« Όταν σε βλέπω » signifie :", choices: ["Quand je te vois", "Si tu me vois", "Pour te voir"], answer: 0 },
+      { q: "« Μαθαίνω για να δουλέψω » :", choices: ["J'apprends si je travaille", "J'apprends pour travailler", "Je travaillais pour apprendre"], answer: 1 },
+      { q: "Quel mot signifie « ou » ?", choices: ["αλλά", "ή", "ότι"], answer: 1 },
+      { q: "« Νομίζω ότι θα έρθει » :", choices: ["Je pense s'il viendra", "Je pense qu'il viendra", "Je viens parce qu'il pense"], answer: 1 },
+      { q: "« ή ή » exprime :", choices: ["Un choix (ou…… ou)", "Une cause", "Une conséquence"], answer: 0 },
+      { q: "Quel mot signifie « aussi, également » ?", choices: ["επίσης", "τότε", "όταν"], answer: 0 },
+    ],
+  },
 ];
 
 /* ---------- Niveaux A2 (grec) ---------- */
@@ -1134,6 +1206,77 @@ const A2_LESSONS = [
     ],
   },
 
+ {
+    id: "a2-connecteurs",
+    title: "Relier ses phrases : cependant, donc, c'est-à-dire",
+    emoji: "🔗",
+    theory: [
+      {
+        title: "Nuancer et enchaîner",
+        body: "Au niveau A2, on dépasse le simple et/mais : on oppose (όμως), on précise (δηλαδή), on conclut (άρα) et on compare (όσο...τόσο). Ces mots font passer d'une suite de phrases à un vrai paragraphe.",
+      },
+      {
+        title: "Conjonctions de coordination : όμως, και, ή, αλλά, ούτε",
+        list: [
+          "όμως = cependant, pourtant (plus fréquent à l'oral que αλλά)",
+          "αλλά = mais (légèrement plus formel)",
+          "μούτε = ni, non plus → Δεν τρώει ψάρι, μούτε κρέας (il ne mange ni poisson ni viande)",
+        ],
+      },
+      {
+        title: "Adverbes de liaison : άρα, εξάλλου, δηλαδή, ωστόσο, τό...όσο",
+        list: [
+          "άρα = donc, ainsi → Βρέχει, άρα μείνουμε σπίτι (il pleut, donc nous restons à la maison)",
+          "εξάλλου = du reste, d'ailleurs → Εξάλλου είναι αργά (d'ailleurs il est tard)",
+          "δηλαδή = c'est-à-dire → Έρχεται αύριο, δηλαδή Πέμπτη (il vient demain, c'est-à-dire jeudi)",
+          "ωστόσο = toutefois, néanmoins (registre un peu soutenu)",
+        ],
+      },
+      {
+        title: "Conjonctions de subordination : καθώς, σαν, ώστε, ότι, επειδή",
+        list: [
+          "καθώς = alors que, comme (temps) → Καθώς μιλούσαμε, ήρθε ο Νίκος",
+          "σαν = comme (manière, comparaison) → Έπεσε σαν παιδί (il est tombé comme un enfant)",
+          "ώστε = si bien que, de sorte que → Μίλα δυνατά ώστε να ακούσούμε (parle fort si bien que nous puissions entendre)",
+          "επειδή = parce que (plus formel que γιατί)",
+        ],
+      },
+      {
+        title: "Corrélations et locutions de coordination",
+        list: [
+          "τόσο...όσο = autant...que → Είμαι τόσο κουρασμένος όσο εσύ (je suis aussi fatigué que toi)",
+          "ούτε...μούτε = ni...ni (corrélatif)",
+          "είτε...είτε = soit...soit → Είτε θα έρθεις είτε θα μείνεις",
+        ],
+      },
+    ],
+    vocab: [
+      { word: "όμως", def: "cependant, pourtant" },
+      { word: "ωστόσο", def: "toutefois, néanmoins" },
+      { word: "άρα", def: "donc" },
+      { word: "εξάλλου", def: "du reste, d'ailleurs" },
+      { word: "δηλαδή", def: "c'est-à-dire" },
+      { word: "επειδή", def: "parce que (formel)" },
+      { word: "καθώς", def: "alors que, comme (temps)" },
+      { word: "σαν", def: "comme (manière)" },
+      { word: "ώστε", def: "si bien que, de sorte que" },
+      { word: "τόσο...όσο", def: "autant...que" },
+      { word: "ούτε...ούτε", def: "ni...ni" },
+      { word: "είτε...είτε", def: "soit...soit" },
+    ],
+    quiz: [
+      { q: "« Βρέχει, άρα μείνουμε » :", choices: ["Il pleut, donc nous restons", "S'il pleut nous restons", "Bien qu'il pleuve nous sortons"], answer: 0 },
+      { q: "« δηλαδή » se traduit par :", choices: ["c'est-à-dire", "parce que", "mais"], answer: 0 },
+      { q: "Quel mot est plus formel que « γιατί » ?", choices: ["επειδή", "ώστε", "έξάλλου"], answer: 0 },
+      { q: "« Καθώς μιλούσαμε » signifie :", choices: ["Alors que nous parlions", "Parce que nous parlons", "Si nous parlons"], answer: 0 },
+      { q: "« Είμαι τόσο κουρασμένος όσο εσύ » :", choices: ["Je suis aussi fatigué que toi", "Je suis moins fatigué que toi", "Nous sommes fatigués tous les deux (autant)"], answer: 2 },
+      { q: "« ωστόσο » exprime :", choices: ["La cause", "La concession (toutefois)", "Le choix"], answer: 1 },
+      { q: "« Έπεσε σαν παιδί » :", choices: ["Il est tombé comme un enfant", "Il a poussé l'enfant", "Il s'aiderait comme un enfant"], answer: 0 },
+      { q: "« ούτε...ούτε » exprime :", choices: ["La négation double (ni...ni)", "Le choix (soit...soit)", "La finalité"], answer: 0 },
+      { q: "« εξάλλου » signifie :", choices: ["d'ailleurs, du reste", "par conséquent", "quand"], answer: 0 },
+      { q: "Quel mot montre un résultat (si bien que) ?", choices: ["καθώς", "ώστε", "σαν"], answer: 1 },
+    ],
+  },
 ];
 
 /* ---------- Niveau B1 (grec) ---------- */
@@ -1458,6 +1601,78 @@ const B1_LESSONS = [
     ],
   },
 
+ {
+    id: "b1-connecteurs",
+    title: "Connecteurs : bien que, donc, par exemple",
+    emoji: "🔗",
+    theory: [
+      {
+        title: "Bâtir un discours suivi",
+        body: "Au niveau B1, on articule un récit ou un argument : concessif (αν και), causal (εφόσον), temporel (αφού, πριν), conséquentiel (κατά συνέπεια), illustratif (για παράδειγμα). C'est ce module qui rend possibles courriels et exposés.",
+      },
+      {
+        title: "Conjonctions de coordination : rappel και, αλλά, ούτε",
+        list: [
+          "αλλά, ούτε : mais, ni (rappel A2, au service d’un discours suivi)",
+          "άραγε = donc ? (particule interrogative : Τι έγινε άραγε ; = Qu'est-il donc arrivé ?)"
+        ],
+      },
+      {
+        title: "Adverbes de liaison : ομοίως, εν τω μεταξύ, κατά συνέπεια",
+        list: [
+          "ομοίως = de même, pareillement",
+          "εν τω μεταξύ = entre-temps, pendant ce temps (locution adverbiale)",
+          "κατά συνέπεια / συνεπώς = par conséquent (soutenu)",
+        ],
+      },
+      {
+        title: "Conjonctions de subordination : αν και, παρόλο που, εφόσον, αφού, πριν",
+        list: [
+          "αν και = bien que → Αν και κουρασμένος, συνέχισε (bien que fatigué, il a continué)",
+          "παρόλο που = bien que (plus fort, suivi de longue) → Παρόλο που βρέχει, θα πάμε",
+          "εφόσον = puisque, dans la mesure où",
+          "αφού = après que / puisque → Αφού φάμε, θα βγούμε (après manger, nous sortirons)",
+          "πριν (από) = avant (que) → Φύγε πριν να αρχίσει η βροχή (pars avant que la pluie commence)"
+        ],
+      },
+      {
+        title: "Locutions de coordination et connecteurs illustratifs",
+        list: [
+          "για παράδειγμα = par exemple",
+          "με άλλα λόγια = autrement dit",
+          "σε σχέση με = par rapport à",
+          "καθώς και = ainsi que (coordination du registre soutenu)",
+        ],
+      },
+    ],
+    vocab: [
+      { word: "αν και", def: "bien que" },
+      { word: "παρόλο που", def: "bien que (plus fort)" },
+      { word: "εφόσον", def: "puisque, dans la mesure où" },
+      { word: "αφού", def: "après que, puisque" },
+      { word: "πριν από", def: "avant (une date, un évènement)" },
+      { word: "ομοίως", def: "de même, pareillement" },
+      { word: "εν τω μεταξύ", def: "entre-temps" },
+      { word: "κατά συνέπεια", def: "par conséquent" },
+      { word: "συνεπώς", def: "par conséquent (soutenu)" },
+      { word: "για παράδειγμα", def: "par exemple" },
+      { word: "με άλλα λόγια", def: "autrement dit" },
+      { word: "σε σχέση με", def: "par rapport à" },
+      { word: "καθώς και", def: "ainsi que" },
+    ],
+    quiz: [
+      { q: "« Αν και κουρασμένος, συνέχισε » :", choices: ["Bien que fatigué, il a continué", "Il était fatigué donc il s'est arrêté", "Quand il s'est fatigué il a continué"], answer: 0 },
+      { q: "« εφόσον » introduit :", choices: ["Une cause admise (puisque)", "Un choix", "Un but"], answer: 0 },
+      { q: "« Αφού φάμε, θα βγούμε » :", choices: ["Puisque nous mangions nous sortions", "Après manger, nous sortirons", "Avant de manger nous sortirons"], answer: 1 },
+      { q: "Quel connecteur signifie « entre-temps » ?", choices: ["εν τω μεταξύ", "ομοίως", "συνεπώς"], answer: 0 },
+      { q: "« κατά συνέπεια » exprime :", choices: ["La conséquence (par conséquent)", "La concession", "La comparaison"], answer: 0 },
+      { q: "Quel connecteur est le plus soutenu pour « par conséquent » ?", choices: ["άρα", "συνεπώς", "εν τω μεταξύ"], answer: 1 },
+      { q: "« παρόλο που βρέχει, θα πάμε » :", choices: ["Bien qu'il pleuve, nous irons", "Parce qu'il pleut nous irons", "S'il pleut nous irons"], answer: 0 },
+      { q: "« με άλλα λόγια » signifie :", choices: ["autrement dit", "par exemple", "entre-temps"], answer: 0 },
+      { q: "« σε σχέση με » signifie :", choices: ["par rapport à", "sans", "aussi"], answer: 0 },
+      { q: "« καθώς και » sert à :", choices: ["Ajouter (ainsi que)", "Opposer (mais)", "Conclure (donc)"], answer: 0 },
+    ],
+  },
 ];
 
 /* ---------- Niveau B2 (grec) ---------- */
@@ -1659,6 +1874,82 @@ const B2_LESSONS = [
     ],
   },
 
+ {
+    id: "b2-connecteurs",
+    title: "Connecteurs du registre soutenu",
+    emoji: "🔗",
+    theory: [
+      {
+        title: "L'articulation d'un propos adulte",
+        body: "Au niveau B2, les connecteurs deviennent presque philosophiques : on concède avec un fait entier (παρά το γεγονός ότι), on conditionne (υπό την προϋπόθεση ότι), on cadre (στο βαθμό που), on ajoute avec force (και μάλιστα). Ce sont ceux des articles, des procès-verbaux et des discours.",
+      },
+      {
+        title: "Conjonctions de coordination : καθώς και, αν και, mais aussi άλλωστε",
+        list: [
+          "καθώς και = ainsi que (coordination lourde, suivi officiel)",
+          "και μάλιστα = et même, voire → Μίλησαν σε όλους, και μάλιστα σε ξένους",
+          "αλλωστε / άλλωστε = du reste, d'ailleurs (placer l'argument décisif)",
+        ],
+      },
+      {
+        title: "Adverbes de liaison : εν συνεχεία, αντίθετα, επιπλέον, αποτέλεσμα",
+        list: [
+          "εν συνεχεία = ensuite, en second lieu (registre administratif)",
+          "αντίθετα = au contraire, à l'inverse",
+          "επιπλέον = en outre, de plus",
+          "ως αποτέλεσμα = en conséquence, aboutissant à",
+        ],
+      },
+      {
+        title: "Conjonctions et locutions de subordination",
+        list: [
+          "δεδομένου ότι = étant donné que",
+          "στο βαθμό που = dans la mesure où, au point que",
+          "παρά το γεγονός ότι = malgré le fait que",
+          "υπό την προϋπόθεση ότι = à condition que, sous réserve que",
+          "όπως και αν = quoi qu'il en soit, de quelque manière que",
+          "χωρίς να = sans que (sans cette action)",
+        ],
+      },
+      {
+        title: "Coordination corrélative et temps",
+        list: [
+          "κάθε φορά που = chaque fois que",
+          "όσο...τόσο = plus...plus (corrélatif)",
+          "είτε...είτε = soit...soit (dans un cadre formel)",
+          "αμέσως μόλις = dès que (immédiat, suivi)",
+        ],
+      },
+    ],
+    vocab: [
+      { word: "δεδομένου ότι", def: "étant donné que" },
+      { word: "στο βαθμό που", def: "dans la mesure où" },
+      { word: "παρά το γεγονός ότι", def: "malgré le fait que" },
+      { word: "υπό την προϋπόθεση ότι", def: "à condition que" },
+      { word: "χωρίς να", def: "sans que" },
+      { word: "και μάλιστα", def: "et même, voire" },
+      { word: "επιπλέον", def: "en outre, de plus" },
+      { word: "αντίθετα", def: "au contraire, à l'inverse" },
+      { word: "εν τω μεταξύ", def: "entre-temps" },
+      { word: "εν συνεχεία", def: "ensuite, en second lieu" },
+      { word: "ως αποτέλεσμα", def: "en conséquence" },
+      { word: "κάθε φορά που", def: "chaque fois que" },
+      { word: "αμέσως μόλις", def: "dès que" },
+      { word: "όπως και αν", def: "quoi qu'il en soit" },
+    ],
+    quiz: [
+      { q: "« δεδομένου ότι » introduit :", choices: ["Un fait admis (étant donné que)", "Un but", "Une opposition"], answer: 0 },
+      { q: "« στο βαθμό που » exprime :", choices: ["La mesure (dans la mesure où)", "Le temps", "Le lieu"], answer: 0 },
+      { q: "« παρά το γεγονός ότι » correspond à :", choices: ["bien que / malgré le fait que", "parce que", "afin que"], answer: 0 },
+      { q: "« και μάλιστα » signale :", choices: ["Un renforcement (et même, voire)", "Une opposition", "Une cause"], answer: 0 },
+      { q: "Quel connecteur est propre au registre administratif (ensuite) ?", choices: ["εν συνεχεία", "εν τω μεταξύ", "σαν"], answer: 0 },
+      { q: "« αμέσως μόλις φτάσεις, τηλεφώνησε » :", choices: ["Dès que tu arrives, appelle", "Avant de partir, appelle", "Parce que tu arrives, appelle"], answer: 0 },
+      { q: "« χωρίς να με ρωτήσεις » :", choices: ["sans me demander", "pour me demander", "bien que tu me demandes"], answer: 0 },
+      { q: "« όσο...τόσο » exprime :", choices: ["La proportion (plus...plus)", "Le choix", "Le contraste (autant...que — version A2 : τόσο...όσο)"], answer: 0 },
+      { q: "« υπό την προϋπόθεση ότι » — forme correcte :", choices: ["υπό την προϋπόθεση ότι", "υπό τn προϋπόθεση ότι", "υπό την προύπόθεση ότι"], answer: 0 },
+      { q: "« όπως και αν » signifie :", choices: ["de quelque manière que (quoi qu'il en soit)", "comme si", "par exemple"], answer: 0 },
+    ],
+  },
 ];
 
 const VOCAB_BANKS = {
