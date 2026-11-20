@@ -55,11 +55,12 @@ Un menu déroulant dans l'en-tête permet de choisir le niveau ; la progression 
 - **Examen final** : 20 questions tirées au sort dans les leçons du niveau choisi, un examen distinct par niveau (A1 à B2), meilleur score et nombre de tentatives enregistrés
 - **Niveaux** : menu déroulant A1 / A2 / B1 / B2 dans l'en-tête, leçons et progression par niveau (niveau mémorisé dans le navigateur)
 - **Progression** : meilleur score par leçon et cartes consultées, sauvegardés dans le navigateur (localStorage), sans compte ni serveur
-- **Vocabulaire** : une banque de 500 mots en A1, de 1 000 mots en A2, de 2 000 mots en B1 et de 1 241 mots en B2 (4 741 mots au total) ; à chaque chargement de la page, 10 mots sont tirés au sort pour les cartes mémoire et le quiz du module — le tirage change à chaque visite
+- **Vocabulaire** : une banque de 500 mots en A1, de 1 000 mots en A2, de 2 000 mots en B1 et de 1 446 mots en B2 (4 946 mots au total) ; à chaque chargement de la page, 10 mots sont tirés au sort pour les cartes mémoire et le quiz du module — le tirage change à chaque visite
 - **Numéro de version** affiché en bas de page pour vérifier que tu utilises la dernière version
 
 ## Versions
 
+- **2.11.0** (build du 2026-11-20 à 21:31 UTC) : banque de vocabulaire B2 portée à 1 446 mots (4 946 mots uniques au total) — quatrième tranche B2, dans la perspective des repères CECRL (500/1 000/2 000/5 000)
 - **2.10.0** (build du 2026-11-20 à 19:09 UTC) : banque de vocabulaire B2 portée à 1 241 mots (4 741 mots uniques au total) — troisième tranche B2, dans la perspective des repères CECRL (500/1 000/2 000/5 000)
 - **2.9.0** (build du 2026-11-20 à 18:08 UTC) : banque de vocabulaire B2 portée à 1 030 mots (4 530 mots uniques au total) — deuxième tranche B2, dans la perspective des repères CECRL (500/1 000/2 000/5 000)
 - **2.8.0** (build du 2026-11-20 à 16:25 UTC) : banque de vocabulaire B2 portée à 848 mots (4 348 mots uniques au total) — première tranche B2, dans la perspective des repères CECRL (500/1 000/2 000/5 000)
