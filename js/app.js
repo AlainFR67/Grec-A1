@@ -1,8 +1,8 @@
 "use strict";
 
-const APP_VERSION = "2.1.0";
+const APP_VERSION = "2.2.0";
 const APP_BUILD_DATE = "2026-11-20";
-const APP_BUILD_TIME = "12:30";
+const APP_BUILD_TIME = "12:45";
 const EXAM_QUESTION_COUNT = 20;
 const EXAM_ID = "examen-final";
 const LEVEL_STORE_KEY = "grec-a1-level";
@@ -98,6 +98,17 @@ function esc(str) {
 
 function pickRandom(arr, count) {
   return shuffle(arr).slice(0, count);
+}
+
+const VOCAB_MODULE_COUNT = 10;
+
+function refreshVocabModules() {
+  Object.keys(LEVELS).forEach((lvl) => {
+    const lesson = LEVELS[lvl].lessons.find((l) => l.vocabBank === lvl);
+    if (lesson && VOCAB_BANKS[lvl]) {
+      lesson.vocab = pickRandom(VOCAB_BANKS[lvl], VOCAB_MODULE_COUNT);
+    }
+  });
 }
 
 function makeChoices(correct, distractorPool) {
@@ -232,7 +243,7 @@ function renderHome() {
     return `
       <article class="card">
         <h3>${lesson.emoji} ${esc(lesson.title)}</h3>
-        <p>${lesson.quiz.length} questions fixes + questions générées · ${lesson.vocab.length} cartes mémoire</p>
+        <p>${lesson.vocabBank ? "10 mots tirés au sort à chaque visite" : `${lesson.quiz.length} questions fixes + questions générées`} · ${lesson.vocab.length} cartes mémoire</p>
         <div class="progressbar"><div style="width:${pct}%"></div></div>
         <div class="detail" style="color:var(--muted);font-size:.85rem;">
           ${best === null ? "Pas encore de quiz" : `Meilleur score : ${best}%`}
@@ -641,6 +652,7 @@ function renderProgress() {
   document.getElementById("progress-exam").addEventListener("click", () => setView("exam"));
 }
 
+refreshVocabModules();
 initVersion();
 initLevelSelect();
 render();
