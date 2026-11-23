@@ -21,7 +21,7 @@ Un menu déroulant dans l'en-tête permet de choisir le niveau ; la progression 
 5. Les verbes en -ω au présent (modèle γράφω)
 6. Les nombres (0 à 20 et au-delà, demander le prix)
 7. La vie quotidienne (jours de la semaine, demander son chemin, l'heure)
-8. La Grèce : culture et civilisation (symboles, grandes dates, valeurs et traditions, institutions, personnalités, mots français venus du grec)
+8. La Grèce : culture et civilisation (symboles, 45 grandes dates de l’Antiquité à nos jours, valeurs et traditions, La Grèce aujourd’hui, mots français venus du grec, 53 personnalités par domaine — écrivains, philosophes et savants, politiques et héros, artistes et cinéma, sportifs —, trésors de la Grèce)
 9. Vocabulaire : les mots du quotidien (banque de 100 mots — 10 tirés au sort à chaque chargement)
 10. Connecteurs logiques : les petits mots qui relient (conjonctions de coordination και, ή, αλλά, adverbes de liaison, subordination lorsque, parce que, si, pour, locutions et…… / ou……ou / non……mais)
 
@@ -47,7 +47,7 @@ Un menu déroulant dans l'en-tête permet de choisir le niveau ; la progression 
 ### B2 · Avancé — 4 leçons
 
 1. Les verbes déponents (κοιμάμαι, φοβάμαι…) et la voix moyenne
-2. La Grèce moderne : institutions et Europe (république 1974, la Βουλή, Europe 1981, euro 2002, fêtes nationales)
+2. La Grèce moderne : institutions et Europe (république 1974, la Βουλή, Europe 1981, euro 2002, fêtes nationales — approfondissement : 12 grandes dates du XXᵉ siècle grec et 14 personnalités politiques, culturelles et sportives)
 3. Vocabulaire : société et monde contemporain (banque de 100 mots — 10 tirés au sort à chaque chargement)
 4. Connecteurs du registre soutenu : en attendant, par ailleurs, en conséquence, immédiatement dès que
 
@@ -64,6 +64,7 @@ Un menu déroulant dans l'en-tête permet de choisir le niveau ; la progression 
 
 ## Versions
 
+- **2.19.0** (build du 2026-11-23) : enrichissement culturel des deux leçons « Grèce », sur le modèle du cours de français (v2.4.0) — « La Grèce : culture et civilisation » (A1) passe à 15 volets : 45 grandes dates (Antiquité, Empire romain et Byzance, ottomans et indépendance, Grèce d’aujourd’hui), 53 personnalités par domaine (écrivains et poètes, philosophes et savants antiques, politiques et héros, artistes et cinéma, sportifs et sportives), 20 cartes et un quiz de 25 questions ; « La Grèce moderne : institutions et Europe » (B2) passe à 6 volets : 12 grandes dates du XXᵉ siècle grec, 14 personnalités (Venizélos, Karamanlís, Papandréou, Mercouri, Vangelis, Antetokoúnmpo…), 12 cartes et un quiz de 15 questions — cumul : 57 dates et 67 personnalités ; banques de vocabulaire inchangées (2 079 mots en B2, 5 579 au total)
 - **2.18.0** (build du 2026-11-20 à 23:17 UTC) : neuvième tranche B2 — « mots-outils et connecteurs logiques » : les 32 connecteurs et locutions conjonctives absents des banques (μούτε, όταν, αν, για να, όμως, επειδή, καθώς, ώστε, αν και, παρόλο που, αφού, ομοίως, κατά συνέπεια, για παράδειγμα, στο βαθμό που, χωρίς να, και μάλιστα, επιπλέον, αντίθετα, ως αποτέλεσμα, κάθε φορά που, αμέσως μόλις, όπως και αν…) rejoignent la banque B2 (2 079 mots, 5 579 uniques au total) — dans la perspective des repères CECRL (500/1 000/2 000/5 000)
 - **2.17.0** (build du 2026-11-20 à 22:22 UTC) : nouveau module « Connecteurs logiques » dans les 4 niveaux — une leçon par niveau couvrant les conjonctions de coordination (και, ή, αλλά, ούτε), les adverbes de liaison (τώρα, τότε, επίσης, ώστόσο, άρα, εξάλλου, εν τω μεταξύ, εν συνεχεία), les conjonctions de subordination (όταν, γιατί, αν, για να, ότι, αφού, εφόσον, δεδομένου ότι…) et les locutions conjonctives de coordination et lien logique — 51 mots de vocabulaire et 40 questions de quiz ajoutés, soit 27 leçons au total
 - **2.16.0** (build du 2026-11-20 à 22:03 UTC) : banque de vocabulaire B2 portée à 2 047 mots (5 547 mots uniques au total) — huitième tranche B2 : sciences (théorème, physique quantique, isotope, catalyseur, constellation), économie d'entreprise (fusion, rachat, amortissement, créance), droit (jurisprudence, amendement, octroi), diplomatie (ambassadeur, consul, traité), botanique et entomologie, métaux, mécanique fine (piston, engrenage, valve, levier), gravure et lithographie, verbes composés du registre soutenu et locutions connectives — dans la perspective des repères CECRL (500/1 000/2 000/5 000)
